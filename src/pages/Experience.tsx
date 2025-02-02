@@ -8,7 +8,7 @@ const experiences = [
 		location: "Remote",
 		period: "01/2025 - 02/2025",
 		type: "Internship",
-		image: "public/experience/codeCraft_page.jpg",
+		image: "./experience/codeCraft_page.jpg",
 		certificateUrl: "./experience/codeCraft.pdf",
 		description: [
 			"Engineered a real-time collaborative document editor using Next.js, TypeScript, and Liveblocks, reducing latency by 30%",
