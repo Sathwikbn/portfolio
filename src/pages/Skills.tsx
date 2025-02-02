@@ -1,3 +1,4 @@
+import React from 'react';
 import { motion } from 'framer-motion';
 import { Brain, PenTool as Tool, Code2, Layout, Server, Database, Users, Wrench, Lightbulb, MessageSquare } from 'lucide-react';
 import {
