@@ -53,7 +53,7 @@ const About = () => {
 									transition={{ duration: 0.5, delay: 0.8 }}
 								>
 									<span className="w-2 h-2 bg-white rounded-full" />
-									<span>Based in Ghatal, Medinipur, WB, India</span>
+									<span>Based in Kolkata, WB, India</span>
 								</motion.li>
 								<motion.li
 									className="flex items-center space-x-2 text-gray-300"
@@ -91,7 +91,7 @@ const About = () => {
 								Download CV
 							</a>
 							<a
-								href="/experience"
+								href="/#/experience"
 								className="px-6 py-3 bg-white/10 text-white rounded-full font-medium hover:bg-white/20 transition-colors"
 							>
 								My Skills
