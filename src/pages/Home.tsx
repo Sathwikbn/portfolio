@@ -46,10 +46,10 @@ const Home = () => {
 						Download CV
 					</a>
 					<a
-						href="mailto:code.niladri@gmail.com"
+						href="/#/about"
 						className="px-6 py-3 bg-white/10 text-white rounded-full font-medium hover:bg-white/20 transition-colors"
 					>
-						Contact Me
+						About Me
 					</a>
 				</motion.div>
 
