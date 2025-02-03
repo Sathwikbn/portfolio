@@ -1,4 +1,3 @@
-import React from 'react';
 import { motion } from 'framer-motion';
 import { Briefcase, MapPin, Building2, ExternalLink, ArrowRight } from 'lucide-react';
 
