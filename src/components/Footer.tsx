@@ -8,7 +8,7 @@ const Footer = () => {
 		{ name: 'Home', path: '/' },
 		{ name: 'About', path: '/about' },
 		{ name: 'Education', path: '/education' },
-		{ name: 'Experience', path: '#/experience' },
+		{ name: 'Experience', path: '/experience' },
 		{ name: 'Skills', path: '/skills' },
 		{ name: 'Projects', path: '/projects' },
 		{ name: 'Certificates', path: '/certificates' },
@@ -33,7 +33,7 @@ const Footer = () => {
 							<span className="text-xl font-bold text-white">Niladri Chatterjee</span>
 						</Link>
 						<p className="text-sm text-gray-400">
-							Software Developer based in Ghatal, Medinipur, WB, India
+							Software Developer located in Kolkata, WB, India
 						</p>
 					</div>
 
@@ -53,7 +53,7 @@ const Footer = () => {
 									className="text-sm text-gray-400 hover:text-white transition-colors flex items-center gap-2"
 								>
 									<Phone className="w-4 h-4" />
-									+916296554939
+									+91-62965-54939
 								</a>
 							</li>
 						</ul>
