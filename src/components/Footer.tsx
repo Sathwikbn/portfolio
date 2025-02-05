@@ -139,7 +139,7 @@ const Footer = () => {
 							© {currentYear} Niladri Chatterjee. All rights reserved.
 						</p>
 						<div className="flex space-x-6 mt-4 md:mt-0">
-							<a href="/" target="_blank" rel="noopener noreferrer" className="text-sm text-gray-400 hover:text-white transition-colors">
+							<a href="" rel="noopener noreferrer" className="text-sm text-gray-400 hover:text-white transition-colors">
 								Portfolio
 							</a>
 						</div>

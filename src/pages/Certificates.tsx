@@ -70,7 +70,7 @@ const certificates = [
 		title: "Data Visualisation: Empowering Business with Effective Insights",
 		issuer: "Tata",
 		date: "10 Jul 2023",
-		link: "",
+		link: "public/certificates/Empowering Business.pdf",
 		description: "Completed practical tasks in creating and communicating business visuals.",
 		skills: ["Framing the Business Scenario", "Choosing the Right Visuals", "Creating Effective Visuals",]
 	},
