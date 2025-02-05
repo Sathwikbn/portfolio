@@ -33,7 +33,7 @@ const Footer = () => {
 							<span className="text-xl font-bold text-white">Niladri Chatterjee</span>
 						</Link>
 						<p className="text-sm text-gray-400">
-							Software Developer located in Kolkata, WB, India
+							Software Developer based in Kolkata, WB, India.
 						</p>
 					</div>
 
@@ -53,14 +53,14 @@ const Footer = () => {
 									className="text-sm text-gray-400 hover:text-white transition-colors flex items-center gap-2"
 								>
 									<Phone className="w-4 h-4" />
-									+91-62965-54939
+									+916296554939
 								</a>
 							</li>
 						</ul>
 					</div>
 
 					{/* Links - First Column */}
-					<div className="space-y-4 -ml-14 mr-10">
+					<div className="space-y-4 -ml-6">
 						<h3 className="text-sm font-semibold text-white">Quick Links</h3>
 						<div className="grid grid-cols-3 gap-x-6 gap-y-3">
 							{/* Column 1 */}
