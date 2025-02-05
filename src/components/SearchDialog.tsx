@@ -7,25 +7,25 @@ const searchData = [
 		title: 'Home',
 		description: 'Go to the welcome page',
 		path: '/',
-		keywords: ['home', 'wellcome page', 'cv', 'resume', 'start']
+		keywords: ['home', 'cv', 'resume', 'start', 'welcome', 'portfolio']
 	},
 	{
 		title: 'About',
 		description: 'Learn more about me and my background',
 		path: '/about',
-		keywords: ['about', 'background', 'education', 'bio', 'profile']
+		keywords: ['about', 'background', 'education', 'bio', 'profile', 'cv', 'resume']
 	},
 	{
 		title: 'Education',
 		description: 'View my educational background',
 		path: '/education',
-		keywords: ['education', 'university', 'college', 'degree', "school", "board"]
+		keywords: ['education', 'university', 'college', 'degree', 'school', 'board']
 	},
 	{
 		title: 'Experience',
 		description: 'Check out my professional experience',
 		path: '/experience',
-		keywords: ['experience', 'work', 'career', 'jobs', 'professional', 'internships']
+		keywords: ['experience', 'work', 'career', 'jobs', 'professional', 'internships', 'certificates']
 	},
 	{
 		title: 'Skills',
@@ -37,13 +37,13 @@ const searchData = [
 		title: 'Projects',
 		description: 'View my portfolio of projects',
 		path: '/projects',
-		keywords: ['projects', 'portfolio', 'work', 'examples', 'github', 'code']
+		keywords: ['projects', 'portfolio', 'work', 'examples', 'github', 'code', 'open-source']
 	},
 	{
 		title: 'Certificates',
 		description: 'View my certifications and achievements',
 		path: '/certificates',
-		keywords: ['certificates', 'certifications', 'achievements', 'courses']
+		keywords: ['certificates', 'certifications', 'achievements', 'courses', 'learning', 'skills', 'professional', 'development', 'awards', 'badges']
 	},
 	//   {
 	//     title: 'Contact',
@@ -121,7 +121,7 @@ const SearchDialog = () => {
 				className="flex items-center space-x-2 px-3 py-1.5 text-gray-400 hover:text-white transition-colors bg-white/15 rounded-lg hover:bg-white/10"
 			>
 				<Search className="w-4 h-4" />
-				<span className="text-sm pr-8">Search...</span>
+				<span className="text-sm pr-8">Search ...</span>
 				<span className="hidden md:flex items-center space-x-1 px-1.5 py-0.5 text-xs bg-white/10 rounded">
 					<Command className="w-3 h-3" />
 					<span>K</span>
