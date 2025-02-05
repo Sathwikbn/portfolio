@@ -6,14 +6,14 @@ const Footer = () => {
 
 	const pageLinks = [
 		{ name: 'Home', path: '/' },
-		{ name: 'About', path: '#/about' },
-		{ name: 'Education', path: '#/education' },
+		{ name: 'About', path: '/about' },
+		{ name: 'Education', path: '/education' },
 		{ name: 'Experience', path: '#/experience' },
-		{ name: 'Skills', path: '#/skills' },
-		{ name: 'Projects', path: '#/projects' },
-		{ name: 'Certificates', path: '#/certificates' },
-		{ name: 'Contact', path: '#/contact' },
-		{ name: 'Services', path: '#/services' }
+		{ name: 'Skills', path: '/skills' },
+		{ name: 'Projects', path: '/projects' },
+		{ name: 'Certificates', path: '/certificates' },
+		{ name: 'Contact', path: '/contact' },
+		{ name: 'Services', path: '/services' }
 	];
 
 	// Split links into columns of 3
