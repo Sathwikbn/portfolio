@@ -4,7 +4,7 @@ import { Github, Linkedin, Mail } from 'lucide-react';
 const Home = () => {
 	return (
 		<div className="min-h-screen flex items-center justify-center px-4">
-			<div className="text-center relative z-10 max-w-4xl mx-auto md:mt-5">
+			<div className="text-center relative z-10 max-w-4xl mx-auto">
 				<motion.h1
 					className="text-6xl md:text-8xl font-bold mb-6 relative tracking-tighter"
 					initial={{ opacity: 0, y: 20 }}
