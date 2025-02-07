@@ -1,6 +1,6 @@
 import { lazy, Suspense } from 'react';
-import { Analytics } from "@vercel/analytics/react"
 import { Routes, Route } from 'react-router-dom';
+import { Analytics } from "@vercel/analytics/react"
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Background3D from './components/Background3D';
@@ -34,14 +34,15 @@ function App() {
 						<Route path="/about" element={<About />} />
 						<Route path="/skills" element={<Skills />} />
 						<Route path="/projects" element={<Projects />} />
-						{/* <Route path="/contact" element={<Contact />} /> */}
 						<Route path="/education" element={<Education />} />
 						<Route path="/experience" element={<Experience />} />
 						<Route path="/certificates" element={<Certificates />} />
+						{/* <Route path="/contact" element={<Contact />} /> */}
 					</Routes>
 				</Suspense>
 			</main>
 			<Footer />
+			<Analytics />
 		</div>
 	);
 }
