@@ -37,7 +37,9 @@ function App() {
 						<Route path="/projects" element={<Projects />} />
 						<Route path="/experience" element={<Experience />} />
 						<Route path="/certificates" element={<Certificates />} />
+						{/* <Route path="/blog" element={<Blog />} /> */}
 						{/* <Route path="/contact" element={<Contact />} /> */}
+
 					</Routes>
 				</Suspense>
 			</main>
