@@ -10,10 +10,10 @@ const Home = lazy(() => import('./pages/Home'));
 const About = lazy(() => import('./pages/About'));
 const Skills = lazy(() => import('./pages/Skills'));
 const Projects = lazy(() => import('./pages/Projects'));
-// const Contact = lazy(() => import('./pages/Contact'));
 const Education = lazy(() => import('./pages/Education'));
 const Experience = lazy(() => import('./pages/Experience'));
 const Certificates = lazy(() => import('./pages/Certificates'));
+const Contact = lazy(() => import('./pages/Contact'));
 
 // Loading fallback
 const LoadingFallback = () => (
@@ -37,7 +37,7 @@ function App() {
 						<Route path="/projects" element={<Projects />} />
 						<Route path="/experience" element={<Experience />} />
 						<Route path="/certificates" element={<Certificates />} />
-						{/* <Route path="/contact" element={<Contact />} /> */}
+						<Route path="/contact" element={<Contact />} />
 
 					</Routes>
 				</Suspense>

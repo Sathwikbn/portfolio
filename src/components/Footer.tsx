@@ -12,7 +12,7 @@ const Footer = () => {
 		{ name: 'Skills', path: '/skills' },
 		{ name: 'Projects', path: '/projects' },
 		{ name: 'Certificates', path: '/certificates' },
-		// { name: 'Contact', path: '/contact' },
+		{ name: 'Contact', path: '/contact' },
 	];
 
 	// Split links into columns of 3
