@@ -1,3 +1,5 @@
+'use client';
+
 import { motion } from 'framer-motion';
 
 const About = () => {
@@ -24,7 +26,7 @@ const About = () => {
 					>
 						<div className="aspect-square overflow-hidden rounded-2xl">
 							<img
-								src="./profile/profile.jpg" // Replace this with your image path
+								src="./profile/profile.jpg"
 								alt="Niladri Chatterjee"
 								className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
 							/>
@@ -90,7 +92,7 @@ const About = () => {
 								Download CV
 							</a>
 							<a
-								href="/#/skills"
+								href="/skills"
 								className="px-6 py-3 bg-white/10 text-white rounded-full font-medium hover:bg-white/20 transition-colors"
 							>
 								My Skills

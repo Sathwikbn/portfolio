@@ -1,3 +1,5 @@
+'use client';
+
 import { motion } from 'framer-motion';
 import {
 	Code2, Layout, Server, Database, MessageSquare, Lightbulb, Users, Brain,

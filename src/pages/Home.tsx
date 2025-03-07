@@ -1,5 +1,8 @@
+'use client';
+
 import { motion } from 'framer-motion';
 import { Github, Linkedin, Mail } from 'lucide-react';
+import Link from 'next/link';
 
 const Home = () => {
 	return (
@@ -53,12 +56,12 @@ const Home = () => {
 					>
 						Download CV
 					</a>
-					<a
-						href="/#/about"
+					<Link
+						href="/about"
 						className="px-6 py-3 bg-white/10 text-white rounded-full font-medium hover:bg-white/20 transition-colors"
 					>
 						About Me
-					</a>
+					</Link>
 				</motion.div>
 
 				<motion.div

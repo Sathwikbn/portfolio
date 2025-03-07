@@ -1,3 +1,5 @@
+'use client';
+
 import { motion } from 'framer-motion';
 import { Briefcase, MapPin, Building2, ExternalLink, ArrowRight } from 'lucide-react';
 
@@ -40,33 +42,7 @@ const experiences = [
 			"Designed 3 websites with CSS, JavaScript, React.js, Node.js and MongoDB, resulting in a 30% increase in user engagement",
 			"Built a money tracker app using HTML, CSS, React.js, Node.js, and MongoDB, improving user financial tracking by 25%"
 		]
-	},
-	{
-		title: "Web Application Intern",
-		company: "Code Clause",
-		location: "Remote",
-		period: "06/2023 - 07/2023",
-		type: "Internship",
-		image: "./experience/codeClause_page.jpg",
-		certificateUrl: "./experience/codeClause.pdf",
-		description: [
-			"Executed industry standards in web development using JavaScript and React.js resulting in a 98 % success rate",
-			"Revamped website design to enhance user experience and increase conversion rates by 40%"
-		]
-	},
-	{
-		title: "Junior Web Engineer",
-		company: "Oasis Infobyte",
-		location: "Remote",
-		period: "05/2023 - 06/2023",
-		type: "Internship",
-		image: "./experience/oasisInfobyte_page.jpg",
-		certificateUrl: "./experience/oasisInfobyte.pdf",
-		description: [
-			"Mastered HTML5, CSS, JavaScript, React.js, Bootstrap, with 86% coding independence",
-			"Engineered a React.js based solution to streamline user interactions, leading to a 40% boost in engagement metrics"
-		]
-	},
+	}
 ];
 
 const Experience = () => {
