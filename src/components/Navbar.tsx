@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { motion } from 'framer-motion';
 import { Code2, Menu, X } from 'lucide-react';
+import SearchDialog from './SearchDialog';
 
 const Navbar = () => {
 	const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -41,6 +42,7 @@ const Navbar = () => {
 
 						{/* Desktop Navigation */}
 						<div className="hidden md:flex items-center space-x-6">
+							<SearchDialog />
 							{navLinks.map(link => (
 								<Link
 									key={link.path}
@@ -73,6 +75,9 @@ const Navbar = () => {
 						transition={{ duration: 0.2 }}
 					>
 						<div className="px-4 pt-2 pb-3 space-y-1">
+							<div className="px-3 py-2">
+								<SearchDialog />
+							</div>
 							{navLinks.map(link => (
 								<Link
 									key={link.path}

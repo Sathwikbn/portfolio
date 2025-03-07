@@ -1,7 +1,7 @@
 'use client';
 
-import React, { useState, useEffect } from 'react';
-import { useRouter } from 'next/router'; // ✅ Updated from 'react-router-dom'
+import { useState, useEffect } from 'react';
+import { useRouter } from 'next/navigation';
 import { Search, Command, ArrowRight } from 'lucide-react';
 
 const searchData = [
@@ -60,7 +60,7 @@ const SearchDialog = () => {
 	const [searchQuery, setSearchQuery] = useState('');
 	const [results, setResults] = useState(searchData);
 	const [selectedIndex, setSelectedIndex] = useState(0);
-	const router = useRouter(); // ✅ Changed from useNavigate()
+	const router = useRouter();
 
 	useEffect(() => {
 		const handleKeyDown = (e: KeyboardEvent) => {
@@ -90,14 +90,14 @@ const SearchDialog = () => {
 			// Select with Enter
 			if (e.key === 'Enter' && results.length > 0) {
 				e.preventDefault();
-				router.push(results[selectedIndex].path); // ✅ Changed from navigate()
+				router.push(results[selectedIndex].path);
 				setIsOpen(false);
 			}
 		};
 
 		window.addEventListener('keydown', handleKeyDown);
 		return () => window.removeEventListener('keydown', handleKeyDown);
-	}, [isOpen, results, selectedIndex, router]); // ✅ Updated dependency from navigate to router
+	}, [isOpen, results, selectedIndex, router]);
 
 	useEffect(() => {
 		if (searchQuery) {
@@ -167,7 +167,7 @@ const SearchDialog = () => {
 											className={`w-full px-4 py-3 text-left hover:bg-white/5 flex items-center justify-between ${index === selectedIndex ? 'bg-white/10' : ''
 												}`}
 											onClick={() => {
-												router.push(result.path); // ✅ Changed from navigate()
+												router.push(result.path);
 												setIsOpen(false);
 											}}
 										>
