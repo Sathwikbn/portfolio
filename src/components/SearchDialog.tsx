@@ -1,5 +1,7 @@
+'use client';
+
 import React, { useState, useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useRouter } from 'next/router'; // ✅ Updated from 'react-router-dom'
 import { Search, Command, ArrowRight } from 'lucide-react';
 
 const searchData = [
@@ -45,12 +47,12 @@ const searchData = [
 		path: '/certificates',
 		keywords: ['certificates', 'certifications', 'achievements', 'courses', 'learning', 'skills', 'professional', 'development', 'awards', 'badges']
 	},
-	//   {
-	//     title: 'Contact',
-	//     description: 'Get in touch with me',
-	//     path: '/contact',
-	//     keywords: ['contact', 'email', 'message', 'connect']
-	//   }
+	{
+		title: 'Contact',
+		description: 'Get in touch with me',
+		path: '/contact',
+		keywords: ['contact', 'email', 'message', 'connect']
+	}
 ];
 
 const SearchDialog = () => {
@@ -58,7 +60,7 @@ const SearchDialog = () => {
 	const [searchQuery, setSearchQuery] = useState('');
 	const [results, setResults] = useState(searchData);
 	const [selectedIndex, setSelectedIndex] = useState(0);
-	const navigate = useNavigate();
+	const router = useRouter(); // ✅ Changed from useNavigate()
 
 	useEffect(() => {
 		const handleKeyDown = (e: KeyboardEvent) => {
@@ -88,14 +90,14 @@ const SearchDialog = () => {
 			// Select with Enter
 			if (e.key === 'Enter' && results.length > 0) {
 				e.preventDefault();
-				navigate(results[selectedIndex].path);
+				router.push(results[selectedIndex].path); // ✅ Changed from navigate()
 				setIsOpen(false);
 			}
 		};
 
 		window.addEventListener('keydown', handleKeyDown);
 		return () => window.removeEventListener('keydown', handleKeyDown);
-	}, [isOpen, results, selectedIndex, navigate]);
+	}, [isOpen, results, selectedIndex, router]); // ✅ Updated dependency from navigate to router
 
 	useEffect(() => {
 		if (searchQuery) {
@@ -165,7 +167,7 @@ const SearchDialog = () => {
 											className={`w-full px-4 py-3 text-left hover:bg-white/5 flex items-center justify-between ${index === selectedIndex ? 'bg-white/10' : ''
 												}`}
 											onClick={() => {
-												navigate(result.path);
+												router.push(result.path); // ✅ Changed from navigate()
 												setIsOpen(false);
 											}}
 										>

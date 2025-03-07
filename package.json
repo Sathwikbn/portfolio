@@ -1,41 +1,35 @@
 {
-	"name": "niladri_chatterjee_portfolio",
-	"private": true,
-	"version": "0.0.0",
-	"type": "module",
-	"scripts": {
-		"dev": "vite",
-		"build": "vite build",
-		"lint": "eslint .",
-		"preview": "vite preview"
-	},
-	"dependencies": {
-		"@react-three/drei": "^9.99.0",
-		"@react-three/fiber": "^8.15.16",
-		"@vercel/analytics": "^1.4.1",
-		"framer-motion": "^11.0.5",
-		"lucide-react": "^0.344.0",
-		"react": "^18.3.1",
-		"react-dom": "^18.3.1",
-		"react-router-dom": "^6.22.1",
-		"three": "^0.161.0"
-	},
-	"devDependencies": {
-		"@eslint/js": "^9.9.1",
-		"@types/react": "^18.3.5",
-		"@types/react-dom": "^18.3.0",
-		"@types/three": "^0.161.2",
-		"@vitejs/plugin-react": "^4.3.1",
-		"autoprefixer": "^10.4.18",
-		"eslint": "^9.9.1",
-		"eslint-plugin-react-hooks": "^5.1.0-rc.0",
-		"eslint-plugin-react-refresh": "^0.4.11",
-		"globals": "^15.9.0",
-		"postcss": "^8.4.35",
-		"tailwindcss": "^3.4.1",
-		"terser": "^5.27.2",
-		"typescript": "^5.5.3",
-		"typescript-eslint": "^8.3.0",
-		"vite": "^5.4.2"
-	}
+  "name": "niladri_chatterjee_portfolio",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@react-three/drei": "^9.99.0",
+    "@react-three/fiber": "^8.15.16",
+    "@types/react-router-dom": "^5.3.3",
+    "@vercel/analytics": "^1.4.1",
+    "framer-motion": "^11.0.5",
+    "lucide-react": "^0.344.0",
+    "next": "^14.2.24",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "three": "^0.161.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.19",
+    "@types/react": "^18.2.55",
+    "@types/react-dom": "^18.2.19",
+    "@types/three": "^0.161.2",
+    "autoprefixer": "^10.4.18",
+    "eslint": "^8.56.0",
+    "eslint-config-next": "14.1.0",
+    "postcss": "^8.4.35",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5.3.3"
+  }
 }

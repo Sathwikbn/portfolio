@@ -1,4 +1,7 @@
-import { Link } from 'react-router-dom';
+'use client';
+
+
+import Link from 'next/link';
 import { Code2, Github, Linkedin, Mail, Phone } from 'lucide-react';
 
 const Footer = () => {
@@ -28,7 +31,7 @@ const Footer = () => {
 				<div className="grid grid-cols-1 md:grid-cols-4 gap-12 py-12">
 					{/* Branding */}
 					<div className="space-y-4">
-						<Link to="/" className="flex items-center space-x-3">
+						<Link href="/" className="flex items-center space-x-3">
 							<Code2 className="w-8 h-8 text-white" />
 							<span className="text-xl font-bold text-white">Niladri Chatterjee</span>
 						</Link>
@@ -68,7 +71,7 @@ const Footer = () => {
 								{column1.map(link => (
 									<Link
 										key={link.path}
-										to={link.path}
+										href={link.path}
 										className="block text-sm text-gray-400 hover:text-white transition-colors mb-2"
 									>
 										{link.name}
@@ -80,7 +83,7 @@ const Footer = () => {
 								{column2.map(link => (
 									<Link
 										key={link.path}
-										to={link.path}
+										href={link.path}
 										className="block text-sm text-gray-400 hover:text-white transition-colors mb-2"
 									>
 										{link.name}
@@ -92,7 +95,7 @@ const Footer = () => {
 								{column3.map(link => (
 									<Link
 										key={link.path}
-										to={link.path}
+										href={link.path}
 										className="block text-sm text-gray-400 hover:text-white transition-colors mb-2"
 									>
 										{link.name}

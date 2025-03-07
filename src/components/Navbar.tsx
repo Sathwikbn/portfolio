@@ -1,11 +1,14 @@
-import React, { useState } from 'react';
-import { NavLink } from 'react-router-dom';
+'use client';
+
+import { useState } from 'react';
+import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 import { motion } from 'framer-motion';
 import { Code2, Menu, X } from 'lucide-react';
-import SearchDialog from './SearchDialog';
 
 const Navbar = () => {
 	const [isMenuOpen, setIsMenuOpen] = useState(false);
+	const pathname = usePathname();
 
 	const navLinks = [
 		{ path: '/', label: 'Home' },
@@ -31,30 +34,26 @@ const Navbar = () => {
 				<div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
 					<div className="flex h-16 items-center justify-between">
 						{/* Logo */}
-						<NavLink to="/" className="flex items-center space-x-3">
+						<Link href="/" className="flex items-center space-x-3">
 							<Code2 className="w-8 h-8 text-white" />
 							<span className="text-xl font-bold text-white">Niladri</span>
-						</NavLink>
+						</Link>
 
 						{/* Desktop Navigation */}
 						<div className="hidden md:flex items-center space-x-6">
-							<SearchDialog />
 							{navLinks.map(link => (
-								<NavLink
+								<Link
 									key={link.path}
-									to={link.path}
-									className={({ isActive }) =>
-										`nav-link ${isActive ? 'bg-white/15 backdrop-blur-sm' : ''}`
-									}
+									href={link.path}
+									className={`nav-link ${pathname === link.path ? 'bg-white/15 backdrop-blur-sm' : ''}`}
 								>
 									{link.label}
-								</NavLink>
+								</Link>
 							))}
 						</div>
 
 						{/* Mobile menu button */}
-						<div className="flex md:hidden items-center space-x-4">
-							<SearchDialog />
+						<div className="flex md:hidden">
 							<button
 								className="p-2 text-gray-400 hover:text-white transition-colors"
 								onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -75,17 +74,15 @@ const Navbar = () => {
 					>
 						<div className="px-4 pt-2 pb-3 space-y-1">
 							{navLinks.map(link => (
-								<NavLink
+								<Link
 									key={link.path}
-									to={link.path}
-									className={({ isActive }) =>
-										`block px-3 py-2 text-gray-400 hover:text-white transition-colors ${isActive ? 'bg-white/10 backdrop-blur-sm text-white' : ''
-										}`
-									}
+									href={link.path}
+									className={`block px-3 py-2 text-gray-400 hover:text-white transition-colors ${pathname === link.path ? 'bg-white/10 backdrop-blur-sm text-white' : ''
+										}`}
 									onClick={() => setIsMenuOpen(false)}
 								>
 									{link.label}
-								</NavLink>
+								</Link>
 							))}
 						</div>
 					</motion.div>
