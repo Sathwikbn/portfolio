@@ -55,7 +55,7 @@ const skills = [
   },
   {
     category: 'Version Control & DevOps',
-    icon: <GitLogo className="w-6 h-6" />,
+    icon: <GitLogo />,
     items: [
       { name: 'Git', icon: <GitLogo /> },
       { name: 'GitHub', icon: <GitLogo /> },
