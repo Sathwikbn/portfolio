@@ -9,7 +9,7 @@ const certificates = [
 		title: "Bulding Responsive Landing Pages",
 		issuer: "Geekster",
 		date: "16th May 2023",
-		link: "./certificates/html_css.pdf",
+		link: "https://drive.google.com/file/d/1Tog0fRYZnwaNzMtPGjjGmfbRGRF5E5gT/view?usp=drive_link",
 		description: "Learn to build responsive landing pages using HTML and CSS.",
 		skills: ["HTML5 & CSS3", "Responsive Design", "Mobile-First Approach", "Flexbox & Grid", "Cross-Browser Compatibility", "User Experience (UX)", "Debugging & Testing"]
 	},
@@ -17,7 +17,7 @@ const certificates = [
 		title: "Cascade Style Sheets (CSS) Fundamentals",
 		issuer: "HackeRank",
 		date: "10th Oct 2023",
-		link: "./certificates/css_hackerrank.pdf",
+		link: "https://drive.google.com/file/d/1udpYUTSiB_mNp8junQ5y59-7BnSFH-CM/view?usp=drive_link",
 		description: "Learn to build responsive landing pages using HTML and CSS.",
 		skills: ["CSS Fundamentals", "Selectors & Specificity", "Box Model", "Flexbox", "Grid", "Responsive Design"]
 	},
@@ -25,7 +25,7 @@ const certificates = [
 		title: "Python Programming",
 		issuer: "HackeRank",
 		date: "10 Oct 2023",
-		link: "./certificates/python_hackerrank.pdf",
+		link: "https://drive.google.com/file/d/1VW-r_ABwz9Q_DKu0kIH1p3mvQSJyPGbj/view?usp=drive_link",
 		description: "Certified in Python (Basic) from HackerRank, proving foundational programming skills.",
 		skills: ["Data Types", "Control Flow", "Loops", "Functions", "Basic Data Structures"]
 	},
@@ -33,7 +33,7 @@ const certificates = [
 		title: "Coding: Development & Advanced - Engineering Virtual Experience",
 		issuer: "Accenture",
 		date: "10 Jul 2023",
-		link: "./certificates/Development & Advanced.pdf",
+		link: "https://drive.google.com/file/d/17H_YIwORETYLvmyqHoBH73JdNATXt-V8/view?usp=drive_link",
 		description: "Completed engineering virtual experience in advanced coding and software development practices",
 		skills: ["Object Oriented Programming", "Code Refactoring", "Continuous Integration", "Agile Planning"]
 	},
@@ -41,7 +41,7 @@ const certificates = [
 		title: "Back-End Engineering Virtual Experience Program",
 		issuer: "Forage",
 		date: "10 Jul 2023",
-		link: "./certificates/Back-End Engineering Virtual Experience.pdf",
+		link: "https://drive.google.com/file/d/1Q8Duv7l-TuxlSFvcHZno5jtM8muI5CSA/view?usp=drive_link",
 		description: "Completed practical tasks in software architecture, refactoring, and testing.",
 		skills: ["Software Architecture", "Refactoring", "Unit Testing", "Test-Driven Development"]
 	},
@@ -49,7 +49,7 @@ const certificates = [
 		title: "Shields Up: Cybersecurity Virtual Experience Program",
 		issuer: "Forage",
 		date: "10 Jul 2023",
-		link: "./certificates/Cybersecurity Virtual Experience.pdf",
+		link: "https://drive.google.com/file/d/1LfBZ1NgQQCKM7BdncqW2yLKisssT1ZLQ/view?usp=drive_link",
 		description: "Completed virtual experience in cybersecurity, focusing on threats and vulnerabilities.",
 		skills: ["Zero-Day Vulnerability Response", "Ransomware Bypass", "Cybersecurity Awareness", "Threat Mitigation"]
 	},
@@ -57,7 +57,7 @@ const certificates = [
 		title: "Digital Intelligence Virtual Case Experience",
 		issuer: "Forage",
 		date: "10 Jul 2023",
-		link: "./certificates/Digital Intelligence Virtual Case Experience.pdf",
+		link: "https://drive.google.com/file/d/1n_mmL-KVRpDvcOP8XUDn_C06vOJO8OQ3/view?usp=drive_link",
 		description: "Completed virtual experience in AI, data analytics, and predictive modeling.",
 		skills: ["Responsible AI", "Quant Finance Modelling", "Data Analytics Strategy", "Predictive Healthcare", "Predictive and Statistical Modelling"]
 	},
@@ -65,7 +65,7 @@ const certificates = [
 		title: "Solutions Architecture Virtual Experience Program",
 		issuer: "AWS (Amazon Web Services)",
 		date: "10 Jul 2023",
-		link: "./certificates/Solutions Architecture Virtual Experience.pdf",
+		link: "https://drive.google.com/file/d/15EhIJPLOSIcJ1iFX8AwSs5D53WzHY7BV/view?usp=drive_link",
 		description: "Completed virtual experience in designing scalable and efficient hosting architectures.",
 		skills: ["Scalable Architecture Design", "Cloud Hosting", "System Design Principles", "Infrastructure Planning"]
 	},
@@ -73,7 +73,7 @@ const certificates = [
 		title: "Data Visualisation: Empowering Business with Effective Insights",
 		issuer: "Tata",
 		date: "10 Jul 2023",
-		link: "./certificates/Empowering Business.pdf",
+		link: "https://drive.google.com/file/d/1Qz2pVCtOwtdaJROWAYhP3osTIYN74ydw/view?usp=drive_link",
 		description: "Completed practical tasks in creating and communicating business visuals.",
 		skills: ["Framing the Business Scenario", "Choosing the Right Visuals", "Creating Effective Visuals",]
 	},
