@@ -31,7 +31,7 @@ const Home = () => {
 					animate={{ opacity: 1, y: 0 }}
 					transition={{ duration: 0.8, delay: 0.2 }}
 				>
-					Software Developer specializing in full-stack development with expertise in React.js, Node.js, and modern web technologies.
+					<strong>Software Developer</strong> specializing in full-stack development with expertise in <strong>React.js, Node.js, and modern</strong>  web technologies.
 				</motion.p>
 				<motion.p
 					className="text-xl md:text-2xl text-gray-400 mb-12 max-w-2xl mx-auto"
@@ -39,7 +39,7 @@ const Home = () => {
 					animate={{ opacity: 1, y: 0 }}
 					transition={{ duration: 0.8, delay: 0.2 }}
 				>
-					I value simple content structure, clean design patterns, and thoughtful efficient code.
+					I value simple <strong>content structure, clean design patterns, and thoughtful efficient code</strong>.
 				</motion.p>
 
 				<motion.div
