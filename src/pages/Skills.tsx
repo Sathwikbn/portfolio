@@ -29,7 +29,7 @@ const skills = [
 		items: [
 			{ name: 'HTML5', icon: <HTML5Logo /> },
 			{ name: 'CSS3', icon: <CSSLogo /> },
-			{ name: 'Tailwind CSS', icon: <TailwindLogo /> },
+			{ name: 'Tailwind', icon: <TailwindLogo /> },
 			{ name: 'ShadCN', icon: <ShadCNLogo /> }
 		]
 	},
