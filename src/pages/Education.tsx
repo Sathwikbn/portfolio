@@ -57,7 +57,7 @@ const Education = () => {
 					transition={{ duration: 0.8 }}
 				>
 					<GraduationCap className="w-8 h-8" />
-					<h2 className="text-4xl font-bold">Education</h2>
+					<h2 className="text-4xl font-bold gradient-text">Education</h2>
 				</motion.div>
 
 				<div className="space-y-12">

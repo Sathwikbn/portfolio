@@ -94,7 +94,7 @@ const Certificates = () => {
 					transition={{ duration: 0.8 }}
 				>
 					<Award className="w-8 h-8" />
-					<h2 className="text-4xl font-bold">Certificates</h2>
+					<h2 className="text-4xl font-bold gradient-text">Certificates</h2>
 				</motion.div>
 
 				<div className="grid md:grid-cols-2 gap-6">

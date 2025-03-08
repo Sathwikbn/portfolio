@@ -1,17 +1,15 @@
 <div align="center">
 
-  # 🎨 **Niladri Chatterjee | Portfolio** 🎨
+  # 🎨 Niladri Chatterjee | Portfolio 🎨
 
   Welcome to my portfolio! I'm a **Web Developer** and **Digital Visual Artist** passionate about designing clean, interactive, and engaging web experiences.
 
   ---
 
-  ## 🌟 **About Me** 🌟
-
+  ## 🌟 About Me 🌟
 </div>
 
 Hi there! I'm **Niladri Chatterjee**. My journey into web development started with uploading my digital concept arts online, and I fell in love with coding and designing for the web. I specialize in:
-
 - 🖌️ **Innovative Web Designs**
 - 🧩 **Real-Time Collaborative Applications**
 - 🎯 **User-Centric Experiences**
@@ -21,13 +19,10 @@ I enjoy coding things from scratch and turning ideas into functional, visually p
 ---
 
 <div align="center">
-
-## 🛠️ **Tech Stack** 🛠️
-
+  ## 🛠️ Tech Stack 🛠️
 </div>
 
 Here's what I work with:
-
 - **Languages:** HTML, CSS, JavaScript, C, C++, Python
 - **Frameworks & Libraries:** React.js, Next.js, Tailwind CSS
 - **Databases:** MySQL, MongoDB
@@ -35,51 +30,81 @@ Here's what I work with:
 
 ---
 
+## 📑 Table of Contents
+
+- [Installation Guide](#-installation-guide)
+- [Environment Setup](#-environment-setup)
+- [Running the Project](#-running-the-project)
+- [License](#-license)
+- [Let's Connect](#-let-s-connect)
+
+---
+
+## ⚙️ Installation Guide
+
+### 1. Clone the Repository
+Open your terminal and run:
+```sh
+git clone https://github.com/niladri-1/Software-Dev-Portfolio.git
+cd Software-Dev-Portfolio
+```
+
+### 2. Install Dependencies
+Install the required packages by running:
+```sh
+npm install
+```
+
+---
+
+## 🔧 Environment Setup
+
+### Set Up Environment Variables
+Create a file named `.env.local` in the root directory of the project and add the following:
+```
+NEXT_PUBLIC_SITE_URL=http://localhost:3000
+CSRF_SECRET=your_generated_secret_key
+```
+- **NEXT_PUBLIC_SITE_URL:** URL where your site is running (use `http://localhost:3000` for local development).
+- **CSRF_SECRET:** Replace `your_generated_secret_key` with a secure random key.
+  To generate one, run:
+  ```sh
+  openssl rand -base64 32
+  ```
+- If you're deploying on Vercel, add these variables to your project's Environment Variables in the Vercel Dashboard.
+
+---
+
+## 🚀 Running the Project
+
+After completing the steps above, run the development server:
+```sh
+npm run dev
+```
+Your application will be available at [http://localhost:3000](http://localhost:3000).
+
+---
+
 <div align="center">
 
-## 🚀 **Featured Projects** 🚀
+  ## 📝 License
 
+This portfolio is designed and developed by **Niladri Chatterjee**. Feel free to explore, but please give credit where it's due.
 </div>
 
-### [**Live Docs**](https://livedocs11.vercel.app/)
-Real-time collaborative document editor built with **Next.js**, **TypeScript**, and **Tailwind CSS**.
+
+---
 
 <div align="center">
-
-[![Live View](https://img.shields.io/badge/Live%20View-000?style=for-the-badge&logo=vercel)](https://livedocs11.vercel.app/)
-[![GitHub Repository](https://img.shields.io/badge/GitHub-000?style=for-the-badge&logo=github)](https://github.com/niladri-1/LiveDocs)
-
+  Thank you for visiting my portfolio! Don't forget to check out my projects and get in touch if you'd like to collaborate! 🎉
 </div>
 
 ---
 
-### [**Figma Clone**](https://tigma1.vercel.app/)
-A real-time collaborative design tool inspired by Figma.
 
 <div align="center">
 
-[![Live View](https://img.shields.io/badge/Live%20View-000?style=for-the-badge&logo=vercel)](https://tigma1.vercel.app/)
-[![GitHub Repository](https://img.shields.io/badge/GitHub-000?style=for-the-badge&logo=github)](https://github.com/niladri-1/Figma-Clone)
-
-</div>
-
----
-
-### [**Video Conferencing App**](https://yoom01.vercel.app/)
-Enables video meetings with chat, screen sharing, and recording.
-
-<div align="center">
-
-[![Live View](https://img.shields.io/badge/Live%20View-000?style=for-the-badge&logo=vercel)](https://yoom01.vercel.app/)
-[![GitHub Repository](https://img.shields.io/badge/GitHub-000?style=for-the-badge&logo=github)](https://github.com/niladri-1/Video-Conferencing-App)
-
-</div>
-
----
-
-<div align="center">
-
-## 📫 **Let's Connect** 📫
+## 📫 Let's Connect
 
 [![Email](https://img.shields.io/badge/Email-000?style=for-the-badge&logo=gmail)](mailto:code.niladri@gmail.com)
 [![GitHub](https://img.shields.io/badge/GitHub-000?style=for-the-badge&logo=github)](https://github.com/niladri-1)
@@ -87,20 +112,3 @@ Enables video meetings with chat, screen sharing, and recording.
 
 </div>
 
----
-
-<div align="center">
-
-## 📝 **License** 📝
-
-</div>
-
-This portfolio is designed and developed by **Niladri Chatterjee**. Feel free to explore, but please give credit where it's due.
-
----
-
-<div align="center">
-
-Thank you for visiting my portfolio! Don't forget to check out my projects and get in touch if you'd like to collaborate! 🎉
-
-</div>
