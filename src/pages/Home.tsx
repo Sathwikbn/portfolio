@@ -95,7 +95,7 @@ const Home = () => {
 							{copied ? (
 								<Check className="w-4 h-4 text-green-500" />
 							) : (
-								<Copy className="w-4 h-4 text-gray-400" />
+									<Copy className="w-4 h-4 text-gray-400 hover:text-white transition-colors" />
 							)}
 						</div>
 					</button>
