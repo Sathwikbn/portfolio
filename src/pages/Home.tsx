@@ -85,7 +85,7 @@ const Home = () => {
 						className="group relative flex items-center gap-2 py-2 pl-8 pr-4 hover:bg-transparent transition-all cursor-pointer"
 					>
 						<div className="absolute left-0 flex items-center">
-							<div className="w-3 text-gray-400 group-hover:text-white transition-colors">
+							<div className="w-3 text-gray-500 group-hover:text-white transition-colors">
 								<VercelLogo />
 							</div>
 							<span className="text-lg font-mono text-gray-400 ml-3 group-hover:text-white transition-colors">~</span>
