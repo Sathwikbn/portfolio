@@ -4,6 +4,7 @@ import Background3D from '@/components/Background3D';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import { Analytics } from '@vercel/analytics/react';
+import { SpeedInsights } from '@vercel/speed-insights/next';
 import './globals.css';
 
 const inter = Inter({ subsets: ['latin'] });
@@ -64,6 +65,7 @@ export default function RootLayout({
 					<Navbar />
 					<Background3D />
 					<main className="flex-grow">{children}</main>
+					<SpeedInsights />
 					<Footer />
 				</div>
 				<Analytics />
