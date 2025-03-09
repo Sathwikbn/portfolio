@@ -1,7 +1,8 @@
 'use client';
 
+import { VercelLogo } from '@/components/TechLogos';
 import { motion } from 'framer-motion';
-import { Github, Linkedin, Mail, Copy, Check, ChevronRight } from 'lucide-react';
+import { Github, Linkedin, Mail, Copy, Check } from 'lucide-react';
 import Link from 'next/link';
 import { useState } from 'react';
 
@@ -84,11 +85,13 @@ const Home = () => {
 						className="group relative flex items-center gap-2 py-2 pl-8 pr-4 hover:bg-transparent transition-all cursor-pointer"
 					>
 						<div className="absolute left-0 flex items-center">
-							<ChevronRight className="w-4 h-4 text-gray-400" />
-							<span className="text-xs font-mono text-gray-400 ml-1">~</span>
+							<div className="w-3 text-gray-400 group-hover:text-white transition-colors">
+								<VercelLogo />
+							</div>
+							<span className="text-lg font-mono text-gray-400 ml-3 group-hover:text-white transition-colors">~</span>
 						</div>
-						<span className="text-gray-400 group-hover:text-white transition-colors">{email}</span>
-						<div className="opacity-0 group-hover:opacity-100 transition-opacity">
+						<span className="text-gray-400 group-hover:text-white transition-colors ml-4">{email}</span>
+						<div className="opacity-0 group-hover:opacity-100 transition-opacity ml-1">
 							{copied ? (
 								<Check className="w-4 h-4 text-green-500" />
 							) : (
