@@ -61,8 +61,8 @@ export default function RootLayout({
 			</head>
 			<body className={inter.className}>
 				<div className="min-h-screen flex flex-col">
-					<Background3D />
 					<Navbar />
+					<Background3D />
 					<main className="flex-grow">{children}</main>
 					<Footer />
 				</div>

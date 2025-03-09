@@ -33,7 +33,6 @@ Here's what I work with:
 ## 📑 Table of Contents
 
 - [Installation Guide](#-installation-guide)
-- [Environment Setup](#-environment-setup)
 - [Running the Project](#-running-the-project)
 - [License](#-license)
 - [Let's Connect](#-let-s-connect)
@@ -49,31 +48,13 @@ git clone https://github.com/niladri-1/Software-Dev-Portfolio.git
 cd Software-Dev-Portfolio
 ```
 
+
 ### 2. Install Dependencies
 Install the required packages by running:
 ```sh
 npm install
 ```
 
----
-
-## 🔧 Environment Setup
-
-### Set Up Environment Variables
-Create a file named `.env.local` in the root directory of the project and add the following:
-```
-NEXT_PUBLIC_SITE_URL=http://localhost:3000
-CSRF_SECRET=your_generated_secret_key
-```
-- **NEXT_PUBLIC_SITE_URL:** URL where your site is running (use `http://localhost:3000` for local development).
-- **CSRF_SECRET:** Replace `your_generated_secret_key` with a secure random key.
-  To generate one, run:
-  ```sh
-  openssl rand -base64 32
-  ```
-- If you're deploying on Vercel, add these variables to your project's Environment Variables in the Vercel Dashboard.
-
----
 
 ## 🚀 Running the Project
 
