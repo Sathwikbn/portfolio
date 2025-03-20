@@ -6,6 +6,14 @@ import { Award, Calendar, ExternalLink } from 'lucide-react';
 
 const certificates = [
 	{
+		title: "AWS ECS Certification",
+		issuer: "KodeKloud",
+		date: "20th March 2025",
+		link: "https://drive.google.com/file/d/18ODyQWWjVoA_WyxtYs33dZmkqoRrLfX8/view?usp=sharing",
+		description: "Covers deploying and managing containers on AWS using ECS, including cluster management, load balancing, auto-scaling, and CI/CD integration.",
+		skills: ["AWS ECS", "Cloud Computing", "DevOps", "CI/CD"]
+	},
+	{
 		title: "Introduction to Critical Infrastructure Protection",
 		issuer: "OPSWAT Academy",
 		date: "26th February 2025",
