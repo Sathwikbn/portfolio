@@ -36,7 +36,7 @@ const experiences = [
 		location: "Remote",
 		period: "Jun 2023 - Jul 2023",
 		type: "Internship",
-		image: "./experience/bharatIntern_page.jpg",
+		image: "./experience/codeClause_page.jpg",
 		certificateUrl: "https://drive.google.com/file/d/1NCIBw2_EVV-XseLgXvp8ESe_t_mSVeDW/view?usp=sharing",
 		description: [
 			"Engineered a real-time collaborative document editor using Next.js, TypeScript, and Liveblocks, reducing latency by 30%",
@@ -49,7 +49,7 @@ const experiences = [
 		location: "Remote",
 		period: "Jun 2023 - Jul 2023",
 		type: "Internship",
-		image: "./experience/bharatIntern_page.jpg",
+		image: "./experience/oasisInfobyte_page.jpg",
 		certificateUrl: "https://drive.google.com/file/d/1ZgtqQ55QBuk6UyES014IWfOf5CxS6LpF/view?usp=sharing",
 		description: [
 			"Engineered a real-time collaborative document editor using Next.js, TypeScript, and Liveblocks, reducing latency by 30%",
