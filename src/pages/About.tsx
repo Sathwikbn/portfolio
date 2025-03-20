@@ -118,7 +118,7 @@ const About = () => {
 							transition={{ duration: 0.8, delay: 0.4 }}
 						>
 							<a
-								href="https://drive.google.com/file/d/1zKa2yqWijwSHUmjb-g8xvNQSGa3O692s/view?usp=drive_link"
+								href="https://drive.google.com/file/d/1BNtnWhw7RoWeUKu44n-iKRC1ysdY2s8L/view?usp=sharing"
 								target="_blank"
 								rel="noopener noreferrer"
 								className="px-6 py-3 bg-white text-black rounded-full font-medium hover:bg-gray-100 transition-colors"

@@ -5,26 +5,13 @@ import { Briefcase, MapPin, Building2, ExternalLink, ArrowRight } from 'lucide-r
 
 const experiences = [
 	{
-		title: "Full Stack Developer",
-		company: "Codecraft Infotech",
-		location: "Remote",
-		period: "01/2025 - 02/2025",
-		type: "Internship",
-		image: "./experience/codeCraft_page.jpg",
-		certificateUrl: "https://drive.google.com/file/d/1LiSBv6NbRnCXWn2tE8dzK5yZCVHzL2pg/view?usp=drive_link",
-		description: [
-			"Engineered a real-time collaborative document editor using Next.js, TypeScript, and Liveblocks, reducing latency by 30%",
-			"Implemented and optimized a personal portfolio with Next.js and Tailwind CSS, improving performance by 40%"
-		]
-	},
-	{
 		title: "Software Engineering Intern",
 		company: "Code Alpha",
 		location: "Remote",
-		period: "06/2024 - 09/2024",
+		period: "Jun 2024 - Aug2024",
 		type: "Internship",
 		image: "./experience/codeAlpha_page.jpg",
-		certificateUrl: "https://drive.google.com/file/d/1Hilwvk8K4VDr-4cXXAp6Z_e-1F39TmL9/view?usp=drive_link",
+		certificateUrl: "https://drive.google.com/file/d/1alQUBXbH7heoeSDZRhFKdSCpu9BO0Srz/view?usp=sharing",
 		description: [
 			"Optimized web application performance with JavaScript and React.js, achieving a 98% error-free rate",
 			"Implemented advanced features on a React.js platform, resulting in a 40% surge in user interaction"
@@ -34,15 +21,41 @@ const experiences = [
 		title: "Full Stack Development Intern ",
 		company: "Bharat Intern",
 		location: "Remote",
-		period: "06/2024 - 07/2024",
+		period: "Jun 2024 - Jul 2024",
 		type: "Internship",
 		image: "./experience/bharatIntern_page.jpg",
-		certificateUrl: "https://drive.google.com/file/d/1RvoNihBkln4pMJWG3Oa4pzNdMEorxlBV/view?usp=drive_link",
+		certificateUrl: "https://drive.google.com/file/d/1WcoGe8RYcj7R2yMdZSX0Byk6wUTmtBPY/view?usp=sharing",
 		description: [
 			"Designed 3 websites with CSS, JavaScript, React.js, Node.js and MongoDB, resulting in a 30% increase in user engagement",
 			"Built a money tracker app using HTML, CSS, React.js, Node.js, and MongoDB, improving user financial tracking by 25%"
 		]
-	}
+	},
+	{
+		title: "Web Applications Intern",
+		company: "CodeClause",
+		location: "Remote",
+		period: "Jun 2023 - Jul 2023",
+		type: "Internship",
+		image: "./experience/bharatIntern_page.jpg",
+		certificateUrl: "https://drive.google.com/file/d/1NCIBw2_EVV-XseLgXvp8ESe_t_mSVeDW/view?usp=sharing",
+		description: [
+			"Engineered a real-time collaborative document editor using Next.js, TypeScript, and Liveblocks, reducing latency by 30%",
+			"Implemented and optimized a personal portfolio with Next.js and Tailwind CSS, improving performance by 40%"
+		]
+	},
+	{
+		title: "Junior Software Engineer",
+		company: "Oasis Infobyte",
+		location: "Remote",
+		period: "Jun 2023 - Jul 2023",
+		type: "Internship",
+		image: "./experience/bharatIntern_page.jpg",
+		certificateUrl: "https://drive.google.com/file/d/1ZgtqQ55QBuk6UyES014IWfOf5CxS6LpF/view?usp=sharing",
+		description: [
+			"Engineered a real-time collaborative document editor using Next.js, TypeScript, and Liveblocks, reducing latency by 30%",
+			"Implemented and optimized a personal portfolio with Next.js and Tailwind CSS, improving performance by 40%"
+		]
+	},
 ];
 
 const Experience = () => {
