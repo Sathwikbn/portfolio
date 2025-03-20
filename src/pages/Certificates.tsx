@@ -8,7 +8,7 @@ const certificates = [
 	{
 		title: "Docker Training Certificate",
 		issuer: "KodeKloud",
-		date: "1th Fabruary 2025",
+		date: "18th Fabruary 2025",
 		link: "https://drive.google.com/file/d/18UHbenVNgcYs2Msm4iHZv1MOOZcLy1eR/view?usp=sharing",
 		description: "Learning Docker teaches containerization, deployment, networking, storage, security, CI/CD, and cloud integration.",
 		skills: ["Containerization", "Docker CLI & Commands", "Dockerfile & Image Optimization", "Networking & Storage Management", "CI/CD Integration", "Cloud Deployment (AWS, GCP, Azure)"]
