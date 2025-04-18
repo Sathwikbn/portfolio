@@ -19,10 +19,8 @@ const Education = () => {
 				"DBMS",
 				"AI",
 				"ML",
-				"Operating Systems",
-				"Computer Networks",
-				"Compiler Design",
-				"Computer Architecture"
+				"OS",
+				"Networking",
 			],
 			description: "During my time at BCET, I have built a strong foundation in computer science, focusing on software development, problem-solving, and real-world applications. Engaging in hands-on projects, internships, and coding challenges has helped me enhance my technical and analytical skills. This experience prepares me for a future in software development, equipping me with the ability to create scalable and efficient solutions."
 		},
