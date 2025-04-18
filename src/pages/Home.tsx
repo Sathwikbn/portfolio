@@ -152,7 +152,7 @@ const Home = () => {
 							transition={{ delay: 0.8 }}
 						>
 							<span className="text-lg font-semibold">1000+</span>
-							<span className="text-sm text-gray-400">LinkedIn Connections</span>
+							<span className="text-sm text-gray-400">LinkedIn Followers</span>
 						</motion.div>
 					</motion.a>
 
