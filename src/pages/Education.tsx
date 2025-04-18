@@ -14,13 +14,13 @@ const Education = () => {
 			image: "./education/college_img.jpg",
 			resultUrl: "https://drive.google.com/file/d/13NLiFAuHZ-Uqfa__cfMHBw0u7L79EV3v/view?usp=sharing",
 			coursework: [
-				"Data Structures and Algorithms",
-				"Object-Oriented Programming",
-				"Database Management Systems",
+				"DSA",
+				"OOPs",
+				"DBMS",
+				"AI",
+				"ML",
 				"Operating Systems",
 				"Computer Networks",
-				"Artificial Intelligence",
-				"Machine Learning",
 				"Compiler Design",
 				"Computer Architecture"
 			],
@@ -35,9 +35,10 @@ const Education = () => {
 			image: "./education/school_img.jpg",
 			resultUrl: "https://drive.google.com/file/d/1PhtxKjRXHwxyRb8Ml14FbkAM_mQR7QEf/view?usp=sharing",
 			subjects: [
-				"Mathematics",
 				"Physics",
 				"Chemistry",
+				"Mathematics",
+				"Biology",
 				"Computer Science"
 			],
 			description: "My higher secondary education laid the foundation for my technical journey, strengthening my analytical thinking and problem-solving abilities. The strong emphasis on mathematics and computer science has been instrumental in shaping my passion for software development, enabling me to approach complex technical challenges with confidence."
