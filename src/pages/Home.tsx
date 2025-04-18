@@ -55,15 +55,6 @@ const Home = () => {
 				>
 					Software Developer specializing in full-stack development with expertise in React.js, Node.js, and modern web technologies.
 				</motion.p>
-				<motion.p
-					className="text-xl md:text-2xl text-gray-400 mb-12 max-w-2xl mx-auto"
-					initial={{ opacity: 0, y: 20 }}
-					animate={{ opacity: 1, y: 0 }}
-					transition={{ duration: 0.8, delay: 0.2 }}
-				>
-					I value simple content structure, clean design patterns, and thoughtful efficient code.
-				</motion.p>
-
 				<motion.div
 					className="flex flex-col items-center gap-6"
 					initial={{ opacity: 0, y: 20 }}
