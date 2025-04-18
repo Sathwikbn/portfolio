@@ -15,12 +15,10 @@ const Home = () => {
 	const whatsappNumber = '+916296554939';
 
 	const { data: githubData } = useSWR('https://api.github.com/users/niladri-1', fetcher);
-	function formatRepoCount(count) {
+	function formatRepoCount(count: number): string {
 		if (count < 5) return count.toString();
 		return `${Math.floor(count / 5) * 5}+`;
 	}
-
-	// Usage
 	const githubRepos = githubData?.public_repos || 0;
 	const displayRepos = formatRepoCount(githubRepos);
 
