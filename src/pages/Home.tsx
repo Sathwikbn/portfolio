@@ -53,7 +53,7 @@ const Home = () => {
 					animate={{ opacity: 1, y: 0 }}
 					transition={{ duration: 0.8, delay: 0.2 }}
 				>
-					Software Developer specializing in full-stack development with expertise in React.js, Node.js, and modern web technologies.
+					Software Developer specializing in Full Stack Development with expertise in React.js, Node.js, and modern Web Technologies.
 				</motion.p>
 				<motion.div
 					className="flex flex-col items-center gap-6"
