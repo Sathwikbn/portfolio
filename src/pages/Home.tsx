@@ -15,7 +15,15 @@ const Home = () => {
 	const whatsappNumber = '+916296554939';
 
 	const { data: githubData } = useSWR('https://api.github.com/users/niladri-1', fetcher);
-	const githubFollowers = githubData?.followers || 0;
+	function formatRepoCount(count) {
+		if (count < 5) return count.toString();
+		return `${Math.floor(count / 5) * 5}+`;
+	}
+
+	// Usage
+	const githubRepos = githubData?.public_repos || 0;
+	const displayRepos = formatRepoCount(githubRepos);
+
 
 	const copyToClipboard = async () => {
 		try {
@@ -120,8 +128,8 @@ const Home = () => {
 							animate={{ opacity: 1 }}
 							transition={{ delay: 0.8 }}
 						>
-							<span className="text-lg font-semibold">{githubFollowers}</span>
-							<span className="text-sm text-gray-400">GitHub Followers</span>
+							<span className="text-lg font-semibold">{displayRepos}</span>
+							<span className="text-sm text-gray-400">GitHub Projects</span>
 						</motion.div>
 					</motion.a>
 
@@ -141,7 +149,7 @@ const Home = () => {
 							animate={{ opacity: 1 }}
 							transition={{ delay: 0.8 }}
 						>
-							<span className="text-lg font-semibold">1000+</span>
+							<span className="text-lg font-semibold">1400+</span>
 							<span className="text-sm text-gray-400">LinkedIn Followers</span>
 						</motion.div>
 					</motion.a>
