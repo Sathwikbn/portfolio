@@ -1,8 +1,7 @@
 'use client';
 
-
 import { motion } from 'framer-motion';
-import { GraduationCap, Calendar, MapPin, BookOpen, Award, FileText } from 'lucide-react';
+import { GraduationCap, Calendar, MapPin, BookOpen, Award, FileText, ExternalLink } from 'lucide-react';
 
 const Education = () => {
 	const educationData = [
@@ -13,6 +12,7 @@ const Education = () => {
 			degree: "B.Tech (Computer Science and Engineering)",
 			grade: "CGPA: 8.48 (80%)",
 			image: "./education/college_img.jpg",
+			resultUrl: "https://drive.google.com/file/d/your-result-pdf-link",
 			coursework: [
 				"Data Structures and Algorithms",
 				"Object-Oriented Programming",
@@ -33,6 +33,7 @@ const Education = () => {
 			degree: "Higher Secondary (WBSC)",
 			grade: "Percentage: 79%",
 			image: "./education/school_img.jpg",
+			resultUrl: "https://drive.google.com/file/d/your-school-result-pdf",
 			subjects: [
 				"Mathematics",
 				"Physics",
@@ -76,14 +77,12 @@ const Education = () => {
 
 							<div className="grid md:grid-cols-[300px,1fr] gap-6">
 								{/* Left Column - Image */}
-								<div className="relative h-full">
-									<div className="aspect-[3/4] overflow-hidden">
-										<img
-											src={edu.image}
-											alt={edu.school}
-											className="w-full h-full object-cover"
-										/>
-									</div>
+								<div className="relative h-64 md:h-full">
+									<img
+										src={edu.image}
+										alt={edu.school}
+										className="w-full h-full object-cover"
+									/>
 									<div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex items-end">
 										<div className="p-6">
 											<h3 className="text-xl font-bold mb-2">{edu.school}</h3>
@@ -113,7 +112,6 @@ const Education = () => {
 
 									{edu.coursework && (
 										<div className="mb-6">
-											{/* <h5 className="text-sm font-semibold text-gray-400 mb-3">Relevant Coursework</h5> */}
 											<div className="flex flex-wrap gap-2">
 												{edu.coursework.map((course) => (
 													<span
@@ -129,7 +127,6 @@ const Education = () => {
 
 									{edu.subjects && (
 										<div className="mb-6">
-											{/* <h5 className="text-sm font-semibold text-gray-400 mb-3">Core Subjects</h5> */}
 											<div className="flex flex-wrap gap-2">
 												{edu.subjects.map((subject) => (
 													<span
@@ -143,11 +140,16 @@ const Education = () => {
 										</div>
 									)}
 
-									{/* <div className="flex items-start gap-2 text-gray-300">
-										<FileText className="w-5 h-5 mt-1 flex-shrink-0" />
-										<p className="text-sm leading-relaxed">{edu.description}</p>
-									</div> */}
-
+									<motion.a
+										href={edu.resultUrl}
+										target="_blank"
+										rel="noopener noreferrer"
+										className="inline-flex items-center gap-2 px-6 py-2.5 bg-white/10 hover:bg-white/20 rounded-lg transition-all text-sm font-medium"
+										whileHover={{ scale: 1.02 }}
+									>
+										View Result
+										<ExternalLink className="w-4 h-4" />
+									</motion.a>
 								</div>
 							</div>
 						</motion.div>

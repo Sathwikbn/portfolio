@@ -2,13 +2,20 @@
 
 import { VercelLogo } from '@/components/TechLogos';
 import { motion } from 'framer-motion';
-import { Github, Linkedin, Mail, Copy, Check } from 'lucide-react';
+import { Github, Linkedin, MessageCircle, Copy, Check } from 'lucide-react';
 import Link from 'next/link';
 import { useState } from 'react';
+import useSWR from 'swr';
+
+const fetcher = (url: string) => fetch(url).then(res => res.json());
 
 const Home = () => {
 	const [copied, setCopied] = useState(false);
 	const email = 'code.niladri@gmail.com';
+	const whatsappNumber = '+916296554939';
+
+	const { data: githubData } = useSWR('https://api.github.com/users/niladri-1', fetcher);
+	const githubFollowers = githubData?.followers || 0;
 
 	const copyToClipboard = async () => {
 		try {
@@ -82,7 +89,7 @@ const Home = () => {
 
 					<button
 						onClick={copyToClipboard}
-						className="group relative flex items-center gap-2 py-2 pl-8 pr-4 hover:bg-transparent transition-all cursor-pointer"
+						className="group relative flex items-center gap-2 py-2 pl-8 pr-4 hover:bg-transparent transition-all cursor-copy"
 					>
 						<div className="absolute left-0 flex items-center">
 							<div className="w-3 text-gray-500 group-hover:text-white transition-colors">
@@ -95,40 +102,80 @@ const Home = () => {
 							{copied ? (
 								<Check className="w-4 h-4 text-green-500" />
 							) : (
-									<Copy className="w-4 h-4 text-gray-400 hover:text-white transition-colors" />
+								<Copy className="w-4 h-4 text-gray-400 hover:text-white transition-colors" />
 							)}
 						</div>
 					</button>
 				</motion.div>
 
 				<motion.div
-					className="flex justify-center space-x-6 mt-12"
+					className="flex justify-center items-center space-x-8 mt-12"
 					initial={{ opacity: 0 }}
 					animate={{ opacity: 1 }}
 					transition={{ duration: 0.8, delay: 0.6 }}
 				>
-					<a
+					<motion.a
 						href="https://github.com/niladri-1"
 						target="_blank"
 						rel="noopener noreferrer"
-						className="group p-2 hover:bg-white/10 rounded-full transition-colors"
+						className="flex flex-col items-center group"
+						whileHover={{ y: -2 }}
 					>
-						<Github className="w-6 h-6 text-gray-400 group-hover:text-white transition-colors" />
-					</a>
-					<a
+						<div className="p-3 bg-white/5 rounded-xl hover:bg-white/10 transition-colors mb-2">
+							<Github className="w-6 h-6 text-gray-400 group-hover:text-white transition-colors" />
+						</div>
+						<motion.div
+							className="flex flex-col items-center"
+							initial={{ opacity: 0 }}
+							animate={{ opacity: 1 }}
+							transition={{ delay: 0.8 }}
+						>
+							<span className="text-lg font-semibold">{githubFollowers}</span>
+							<span className="text-sm text-gray-400">GitHub Followers</span>
+						</motion.div>
+					</motion.a>
+
+					<motion.a
 						href="https://linkedin.com/in/niladri1"
 						target="_blank"
 						rel="noopener noreferrer"
-						className="group p-2 hover:bg-white/10 rounded-full transition-colors"
+						className="flex flex-col items-center group"
+						whileHover={{ y: -2 }}
 					>
-						<Linkedin className="w-6 h-6 text-gray-400 group-hover:text-white transition-colors" />
-					</a>
-					<a
-						href="mailto:code.niladri@gmail.com"
-						className="group p-2 hover:bg-white/10 rounded-full transition-colors"
+						<div className="p-3 bg-white/5 rounded-xl hover:bg-white/10 transition-colors mb-2">
+							<Linkedin className="w-6 h-6 text-gray-400 group-hover:text-white transition-colors" />
+						</div>
+						<motion.div
+							className="flex flex-col items-center"
+							initial={{ opacity: 0 }}
+							animate={{ opacity: 1 }}
+							transition={{ delay: 0.8 }}
+						>
+							<span className="text-lg font-semibold">1000+</span>
+							<span className="text-sm text-gray-400">LinkedIn Connections</span>
+						</motion.div>
+					</motion.a>
+
+					<motion.a
+						href={`https://wa.me/${whatsappNumber}`}
+						target="_blank"
+						rel="noopener noreferrer"
+						className="flex flex-col items-center group"
+						whileHover={{ y: -2 }}
 					>
-						<Mail className="w-6 h-6 text-gray-400 group-hover:text-white transition-colors" />
-					</a>
+						<div className="p-3 bg-white/5 rounded-xl hover:bg-white/10 transition-colors mb-2">
+							<MessageCircle className="w-6 h-6 text-gray-400 group-hover:text-white transition-colors" />
+						</div>
+						<motion.div
+							className="flex flex-col items-center"
+							initial={{ opacity: 0 }}
+							animate={{ opacity: 1 }}
+							transition={{ delay: 0.8 }}
+						>
+							<span className="text-lg font-semibold">24x7</span>
+							<span className="text-sm text-gray-400">WhatsApp Me</span>
+						</motion.div>
+					</motion.a>
 				</motion.div>
 			</div>
 		</div>

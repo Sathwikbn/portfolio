@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { Mail, Phone, MapPin, Github, Linkedin, Globe, Clock, Send, MessageSquare } from 'lucide-react';
+import { Mail, Phone, MapPin, Github, Linkedin, MessageCircle, Clock, Send, MessageSquare } from 'lucide-react';
 import { useState } from 'react';
 
 const Contact = () => {
@@ -62,8 +62,8 @@ const Contact = () => {
 			link: 'https://linkedin.com/in/niladri1'
 		},
 		{
-			icon: <Globe className="w-5 h-5" />,
-			label: 'Portfolio',
+			icon: <MessageCircle className="w-5 h-5" />,
+			label: 'WhatsApp',
 			link: 'https://niladri1.vercel.app'
 		}
 	];
