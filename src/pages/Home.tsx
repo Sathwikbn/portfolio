@@ -103,7 +103,7 @@ const Home = () => {
 							</div>
 							<span className="text-lg font-mono text-gray-400 ml-3 group-hover:text-white transition-colors">~</span>
 						</div>
-						<span className="text-gray-400 group-hover:text-white transition-colors ml-4 text-sm sm:text-base">{email}</span>
+						<span className="text-gray-400 group-hover:text-white transition-colors ml-4 sm:text-base">{email}</span>
 						<div className="opacity-0 group-hover:opacity-100 transition-opacity ml-1 hidden sm:block">
 							{copied ? (
 								<Check className="w-4 h-4 text-green-500" />
@@ -115,7 +115,7 @@ const Home = () => {
 				</motion.div>
 
 				<motion.div
-					className="grid grid-cols-1 sm:grid-cols-3 justify-items-center gap-6 mt-8 sm:mt-12 max-w-xs sm:max-w-none mx-auto"
+					className="grid grid-cols-3 justify-items-center gap-6 mt-8 sm:mt-12 max-w-xs sm:max-w-none mx-auto"
 					initial={{ opacity: 0 }}
 					animate={{ opacity: 1 }}
 					transition={{ duration: 0.8, delay: 0.6 }}
