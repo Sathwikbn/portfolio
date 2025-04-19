@@ -1,6 +1,5 @@
 'use client';
 
-
 import Link from 'next/link';
 import { Code2, Github, Linkedin, Mail, Phone } from 'lucide-react';
 
@@ -18,17 +17,12 @@ const Footer = () => {
 		{ name: 'Contact', path: '/contact' },
 	];
 
-	// Split links into columns of 3
-	const column1 = pageLinks.slice(0, 3);
-	const column2 = pageLinks.slice(3, 6);
-	const column3 = pageLinks.slice(6, 9);
-
 	return (
 		<footer className="relative mt-24">
 			<div className="absolute inset-0 bg-black/50 backdrop-blur-xl" />
 
 			<div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-				<div className="grid grid-cols-1 md:grid-cols-4 gap-12 py-12">
+				<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 py-12">
 					{/* Branding */}
 					<div className="space-y-4">
 						<Link href="/" className="flex items-center space-x-3">
@@ -62,74 +56,50 @@ const Footer = () => {
 						</ul>
 					</div>
 
-					{/* Links - First Column */}
+					{/* Links */}
 					<div className="space-y-4">
 						<h3 className="text-sm font-semibold text-white">Quick Links</h3>
-						<div className="grid grid-cols-3 gap-x-6 gap-y-3">
-							{/* Column 1 */}
-							<div>
-								{column1.map(link => (
-									<Link
-										key={link.path}
-										href={link.path}
-										className="block text-sm text-gray-400 hover:text-white transition-colors mb-2"
-									>
-										{link.name}
-									</Link>
-								))}
-							</div>
-							{/* Column 2 */}
-							<div>
-								{column2.map(link => (
-									<Link
-										key={link.path}
-										href={link.path}
-										className="block text-sm text-gray-400 hover:text-white transition-colors mb-2"
-									>
-										{link.name}
-									</Link>
-								))}
-							</div>
-							{/* Column 3 */}
-							<div>
-								{column3.map(link => (
-									<Link
-										key={link.path}
-										href={link.path}
-										className="block text-sm text-gray-400 hover:text-white transition-colors mb-2"
-									>
-										{link.name}
-									</Link>
-								))}
-							</div>
+						<div className="grid grid-cols-2 sm:grid-cols-2 gap-2">
+							{pageLinks.map(link => (
+								<Link
+									key={link.path}
+									href={link.path}
+									className="text-sm text-gray-400 hover:text-white transition-colors"
+								>
+									{link.name}
+								</Link>
+							))}
 						</div>
 					</div>
 
 					{/* Social */}
 					<div className="space-y-4">
 						<h3 className="text-sm font-semibold text-white">Social</h3>
-						<div className="flex space-x-4">
+						<div className="flex flex-wrap gap-4">
 							<a
 								href="https://github.com/niladri-1"
 								target="_blank"
 								rel="noopener noreferrer"
-								className="text-gray-400 hover:text-white transition-colors"
+								className="flex items-center gap-2 text-gray-400 hover:text-white transition-colors"
 							>
 								<Github className="w-5 h-5" />
+								<span className="text-sm">GitHub</span>
 							</a>
 							<a
 								href="https://linkedin.com/in/niladri1"
 								target="_blank"
 								rel="noopener noreferrer"
-								className="text-gray-400 hover:text-white transition-colors"
+								className="flex items-center gap-2 text-gray-400 hover:text-white transition-colors"
 							>
 								<Linkedin className="w-5 h-5" />
+								<span className="text-sm">LinkedIn</span>
 							</a>
 							<a
 								href="mailto:code.niladri@gmail.com"
-								className="text-gray-400 hover:text-white transition-colors"
+								className="flex items-center gap-2 text-gray-400 hover:text-white transition-colors"
 							>
 								<Mail className="w-5 h-5" />
+								<span className="text-sm">Email</span>
 							</a>
 						</div>
 					</div>
@@ -137,12 +107,12 @@ const Footer = () => {
 
 				{/* Bottom bar */}
 				<div className="border-t border-white/10 py-6">
-					<div className="flex flex-col md:flex-row justify-between items-center">
-						<p className="text-sm text-gray-400">
+					<div className="flex flex-col sm:flex-row justify-between items-center gap-4 sm:gap-0">
+						<p className="text-sm text-gray-400 text-center sm:text-left">
 							© {currentYear} Niladri Chatterjee. All rights reserved.
 						</p>
-						<div className="flex space-x-6 mt-4 md:mt-0">
-							<a href="" rel="noopener noreferrer" className="text-sm text-gray-400 hover:text-white transition-colors">
+						<div className="flex space-x-6">
+							<a href="/" className="text-sm text-gray-400 hover:text-white transition-colors">
 								Portfolio
 							</a>
 						</div>
