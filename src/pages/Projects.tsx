@@ -1,8 +1,8 @@
 'use client';
 
-
 import { motion } from 'framer-motion';
 import { Github, ExternalLink } from 'lucide-react';
+import { ScrollAnimation } from '@/components/ScrollAnimation';
 
 const projects = [
 	{
@@ -58,22 +58,14 @@ const projects = [
 const Projects = () => {
 	return (
 		<div className="min-h-screen pt-20 px-4 max-w-6xl mx-auto">
-			<motion.div
-				initial={{ opacity: 0, y: 20 }}
-				animate={{ opacity: 1, y: 0 }}
-				transition={{ duration: 0.8 }}
-			>
+			<ScrollAnimation>
 				<h2 className="text-4xl font-bold mb-12 gradient-text">Featured Projects</h2>
+			</ScrollAnimation>
 
-				<div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-					{projects.map((project, index) => (
-						<motion.div
-							key={project.title}
-							initial={{ opacity: 0, y: 20 }}
-							animate={{ opacity: 1, y: 0 }}
-							transition={{ duration: 0.8, delay: index * 0.2 }}
-							className="bg-gray-800/50 rounded-lg overflow-hidden backdrop-blur-sm"
-						>
+			<div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+				{projects.map((project, index) => (
+					<ScrollAnimation key={project.title}>
+						<div className="bg-gray-800/50 rounded-lg overflow-hidden backdrop-blur-sm">
 							<img
 								src={project.image}
 								alt={project.title}
@@ -102,10 +94,10 @@ const Projects = () => {
 									</a>
 								</div>
 							</div>
-						</motion.div>
-					))}
-				</div>
-			</motion.div>
+						</div>
+					</ScrollAnimation>
+				))}
+			</div>
 		</div>
 	);
 };

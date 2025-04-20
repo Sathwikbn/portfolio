@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion';
 import { Briefcase, MapPin, Building2, ExternalLink, ArrowRight } from 'lucide-react';
+import { ScrollAnimation } from '@/components/ScrollAnimation';
 
 const experiences = [
 	{
@@ -61,32 +62,18 @@ const experiences = [
 const Experience = () => {
 	return (
 		<div className="min-h-screen pt-16 sm:pt-20 px-4 max-w-5xl mx-auto pb-16 sm:pb-20">
-			<motion.div
-				initial={{ opacity: 0, y: 20 }}
-				animate={{ opacity: 1, y: 0 }}
-				transition={{ duration: 0.8 }}
-			>
-				<motion.h2
-					className="text-3xl sm:text-4xl font-bold mb-8 sm:mb-12 gradient-text flex items-center gap-3"
-					initial={{ opacity: 0, x: -20 }}
-					animate={{ opacity: 1, x: 0 }}
-					transition={{ duration: 0.8 }}
-				>
+			<ScrollAnimation>
+				<h2 className="text-3xl sm:text-4xl font-bold mb-8 sm:mb-12 gradient-text flex items-center gap-3">
 					<Briefcase className="w-7 h-7 sm:w-8 sm:h-8" />
 					Professional Experience
-				</motion.h2>
+				</h2>
+			</ScrollAnimation>
 
-				<div className="space-y-8 sm:space-y-12">
-					{experiences.map((exp, index) => (
-						<motion.div
-							key={exp.title}
-							initial={{ opacity: 0, y: 20 }}
-							animate={{ opacity: 1, y: 0 }}
-							transition={{ duration: 0.8, delay: index * 0.2 }}
-							className="group relative bg-gray-800/50 rounded-xl sm:rounded-2xl overflow-hidden backdrop-blur-sm hover:bg-gray-800/70 transition-all border border-white/5"
-						>
+			<div className="space-y-8 sm:space-y-12">
+				{experiences.map((exp, index) => (
+					<ScrollAnimation key={exp.title}>
+						<div className="group relative bg-gray-800/50 rounded-xl sm:rounded-2xl overflow-hidden backdrop-blur-sm hover:bg-gray-800/70 transition-all border border-white/5">
 							<div className="grid grid-cols-1 md:grid-cols-[1fr,300px]">
-								{/* Content Section */}
 								<div className="p-6 sm:p-8">
 									<div className="flex items-center gap-3 mb-4 sm:mb-6">
 										<div className="p-2 sm:p-3 bg-white/10 rounded-lg sm:rounded-xl group-hover:bg-white/20 transition-colors">
@@ -107,20 +94,16 @@ const Experience = () => {
 
 									<ul className="space-y-3 sm:space-y-4">
 										{exp.description.map((item, i) => (
-											<motion.li
+											<li
 												key={i}
-												initial={{ opacity: 0, x: -20 }}
-												animate={{ opacity: 1, x: 0 }}
-												transition={{ duration: 0.5, delay: 0.2 + i * 0.1 }}
 												className="flex items-start gap-3 text-gray-300 text-sm sm:text-base"
 											>
 												<ArrowRight className="w-5 h-5 mt-0.5 text-gray-400 flex-shrink-0" />
 												<span className="leading-relaxed">{item}</span>
-											</motion.li>
+											</li>
 										))}
 									</ul>
 
-									{/* Mobile Certificate Button */}
 									<motion.a
 										href={exp.certificateUrl}
 										target="_blank"
@@ -133,7 +116,6 @@ const Experience = () => {
 									</motion.a>
 								</div>
 
-								{/* Image Section - Hidden on Mobile */}
 								<div className="relative hidden md:block">
 									<div className="absolute inset-0">
 										<img
@@ -150,9 +132,6 @@ const Experience = () => {
 											rel="noopener noreferrer"
 											className="px-8 py-3 text-white font-bold bg-white/10 hover:bg-white/20 backdrop-blur-sm rounded-xl flex items-center gap-2 transition-all duration-300 hover:scale-105 border border-white/10 hover:border-white/20"
 											whileHover={{ y: -5 }}
-											initial={{ opacity: 0 }}
-											animate={{ opacity: 1 }}
-											transition={{ duration: 0.5, delay: 0.5 }}
 										>
 											View Certificate
 											<ExternalLink className="w-4 h-4" />
@@ -160,10 +139,10 @@ const Experience = () => {
 									</div>
 								</div>
 							</div>
-						</motion.div>
-					))}
-				</div>
-			</motion.div>
+						</div>
+					</ScrollAnimation>
+				))}
+			</div>
 		</div>
 	);
 };
