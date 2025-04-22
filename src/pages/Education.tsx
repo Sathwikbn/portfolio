@@ -12,7 +12,7 @@ const Education = () => {
 			degree: "B.Tech (Computer Science and Engineering)",
 			grade: "CGPA: 8.48 (80%)",
 			image: "./education/college_img.jpg",
-			resultUrl: "https://drive.google.com/file/d/13NLiFAuHZ-Uqfa__cfMHBw0u7L79EV3v/view?usp=sharing",
+			resultUrl: "./files/education_pdf/B Tech.pdf",
 			coursework: [
 				"DSA",
 				"OOPs",
@@ -31,7 +31,7 @@ const Education = () => {
 			degree: "Higher Secondary (WBSC)",
 			grade: "Percentage: 79%",
 			image: "./education/school_img.jpg",
-			resultUrl: "https://drive.google.com/file/d/1PhtxKjRXHwxyRb8Ml14FbkAM_mQR7QEf/view?usp=sharing",
+			resultUrl: "./files/education_pdf/HS MARK SHEET.pdf",
 			subjects: [
 				"Physics",
 				"Chemistry",
