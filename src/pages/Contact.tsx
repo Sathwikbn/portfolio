@@ -64,7 +64,7 @@ const Contact = () => {
 		{
 			icon: <MessageCircle className="w-5 h-5" />,
 			label: 'WhatsApp',
-			link: 'https://niladri1.vercel.app'
+			link: 'https://wa.me/+916296554939'
 		}
 	];
 
