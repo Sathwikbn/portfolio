@@ -61,7 +61,7 @@ export function middleware(request: NextRequest) {
 	const url = request.nextUrl.pathname.toLowerCase();
 	const blockedPatterns = ['/wp-admin', '/wp-login', '/admin', '.php', '.env'];
 	if (blockedPatterns.some(pattern => url.includes(pattern))) {
-		return new NextResponse('Not Found', { status: 404 });
+		return NextResponse.rewrite(new URL('/not-found-trigger', request.url));
 	}
 
 	return response;
