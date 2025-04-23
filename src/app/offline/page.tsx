@@ -1,11 +1,11 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import { WifiOff, Home } from 'lucide-react';
 import Link from 'next/link';
-import { Home } from 'lucide-react';
 import { ScrollAnimation } from '@/components/ScrollAnimation';
 
-export default function NotFound() {
+export default function OfflinePage() {
   return (
     <div className="min-h-screen flex items-center justify-center px-4">
       <div className="text-center max-w-2xl mx-auto relative z-10">
@@ -17,7 +17,7 @@ export default function NotFound() {
             transition={{ duration: 0.5 }}
           >
             <motion.div 
-              className="text-[12rem] font-bold leading-none gradient-text"
+              className="flex justify-center mb-8"
               animate={{ 
                 y: [0, -20, 0],
                 rotate: [0, -5, 5, 0]
@@ -28,15 +28,8 @@ export default function NotFound() {
                 ease: "easeInOut"
               }}
             >
-              404
+              <WifiOff className="w-32 h-32 text-gray-400" />
             </motion.div>
-            
-            <motion.div
-              className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent"
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 0.2 }}
-            />
           </motion.div>
         </ScrollAnimation>
 
@@ -47,7 +40,7 @@ export default function NotFound() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3 }}
           >
-            Page Not Found
+            No Internet Connection
           </motion.h2>
         </ScrollAnimation>
 
@@ -58,7 +51,7 @@ export default function NotFound() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.4 }}
           >
-            Oops! The page you're looking for seems to have vanished into the digital void.
+            Please check your internet connection and try again
           </motion.p>
         </ScrollAnimation>
 
@@ -73,7 +66,7 @@ export default function NotFound() {
               className="inline-flex items-center gap-2 px-6 py-3 bg-white text-black rounded-full font-medium hover:bg-gray-100 transition-colors group"
             >
               <Home className="w-5 h-5 group-hover:scale-110 transition-transform" />
-              <span>Back to Home</span>
+              <span>Try Again</span>
             </Link>
           </motion.div>
         </ScrollAnimation>
