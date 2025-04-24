@@ -2,7 +2,7 @@
 
 import { VercelLogo } from '@/components/TechLogos';
 import { motion } from 'framer-motion';
-import { Github, Linkedin, MessageCircle, Copy, Check } from 'lucide-react';
+import { Github, Linkedin, MessageCircle, Copy, Check, FileDown, User } from 'lucide-react';
 import Link from 'next/link';
 import { useState } from 'react';
 import useSWR from 'swr';
@@ -81,14 +81,16 @@ const Home = () => {
 							href="./files/cv_pdf/Niladri_Chatterjee(CV).pdf"
 							target="_blank"
 							rel="noopener noreferrer"
-							className="px-4 sm:px-6 py-2.5 sm:py-3 bg-white text-black rounded-full text-sm sm:text-base font-medium hover:bg-gray-100 transition-colors"
+							className="px-4 sm:px-6 py-2.5 sm:py-3 bg-white text-black rounded-full text-sm sm:text-base font-medium hover:bg-gray-100 transition-colors flex items-center gap-2"
 						>
+							<FileDown className="w-4 h-4 sm:w-5 sm:h-5" />
 							Download CV
 						</a>
 						<Link
 							href="/about"
-							className="px-4 sm:px-6 py-2.5 sm:py-3 bg-white/10 text-white rounded-full text-sm sm:text-base font-medium hover:bg-white/20 transition-colors"
+							className="px-4 sm:px-6 py-2.5 sm:py-3 bg-white/10 text-white rounded-full text-sm sm:text-base font-medium hover:bg-white/20 transition-colors flex items-center gap-2"
 						>
+							<User className="w-4 h-4 sm:w-5 sm:h-5" />
 							About Me
 						</Link>
 					</div>
