@@ -8,8 +8,8 @@ const certificates = [
 	{
 		title: "Typescript Programming",
 		issuer: "Geekster",
-		date: "22th April 2025 ",
-		link: "./files/certificates_pdf/typescript.pdf",
+		date: "22th April 2025",
+		link: "./files/certificates_pdf/TypeScript.pdf",
 		description: "Covers TypeScript fundamentals, including syntax, types. Includes practical examples and real-world applications.",
 		skills: ["TypeScript", "JavaScript", "Frontend Development", "Backend Development"]
 	},
