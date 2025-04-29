@@ -23,7 +23,7 @@ lerna-debug.log*
 Thumbs.db
 
 # Editor/IDE settings
-.vscode/
+.vscode/ 
 .idea/
 *.swp
 *.swo
