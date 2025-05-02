@@ -1,106 +1,133 @@
 <div align="center">
 
-  # 🎨 **Niladri Chatterjee | Portfolio** 🎨
+  # Niladri Chatterjee's Portfolio 🚀
 
-  Welcome to my portfolio! I'm a **Web Developer** and **Digital Visual Artist** passionate about designing clean, interactive, and engaging web experiences.
+  [![Website](https://img.shields.io/website?label=Portfolio&style=for-the-badge&url=https%3A%2F%2Fniladri1.vercel.app)](https://niladri1.vercel.app)
+  [![GitHub followers](https://img.shields.io/github/followers/niladri-1?logo=github&style=for-the-badge)](https://github.com/niladri-1)
+  [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=for-the-badge&logo=linkedin)](https://linkedin.com/in/niladri1)
+  [![Vercel](https://img.shields.io/badge/Vercel-Deployed-black?style=for-the-badge&logo=vercel)](https://niladri1.vercel.app)
+  [![Next.js](https://img.shields.io/badge/Built%20with-Next.js-black?style=for-the-badge&logo=next.js)](https://nextjs.org)
 
-  ---
+  <p align="center">
+    <img src="https://skillicons.dev/icons?i=react,nextjs,typescript,tailwind" alt="Tech Stack" />
+  </p>
 
-  ## 🌟 **About Me** 🌟
+  <h3>Full Stack Developer | MERN Specialist | Database Expert</h3>
 
-</div>
-
-Hi there! I'm **Niladri Chatterjee**. My journey into web development started with uploading my digital concept arts online, and I fell in love with coding and designing for the web. I specialize in:
-
-- 🖌️ **Innovative Web Designs**
-- 🧩 **Real-Time Collaborative Applications**
-- 🎯 **User-Centric Experiences**
-
-I enjoy coding things from scratch and turning ideas into functional, visually pleasing realities.
-
----
-
-<div align="center">
-
-## 🛠️ **Tech Stack** 🛠️
+  [View Live Demo](https://niladri1.vercel.app) · [Report Bug](https://github.com/niladri-1/Software-Dev-Portfolio/issues) · [Request Feature](https://github.com/niladri-1/Software-Dev-Portfolio/issues)
 
 </div>
 
-Here's what I work with:
+## 🌟 Overview
 
-- **Languages:** HTML, CSS, JavaScript, C, C++, Python
-- **Frameworks & Libraries:** React.js, Next.js, Tailwind CSS
-- **Databases:** MySQL, MongoDB
-- **Tools:** Git, GitHub, Figma, Canva, VS Code
+A modern, responsive portfolio website showcasing my journey as a Full Stack Developer. Built with Next.js and Tailwind CSS, this portfolio demonstrates my expertise in web development through interactive UI components and seamless user experience.
 
----
+## ✨ Key Features
 
 <div align="center">
 
-## 🚀 **Featured Projects** 🚀
+| Feature | Description |
+|---------|------------|
+| 🎨 Modern Design | Sleek dark theme with beautiful gradients |
+| 📱 Responsive | Optimized for all devices |
+| ⚡ Fast Performance | Optimized loading and rendering |
+| 🔍 Smart Search | Real-time search across portfolio |
+| 🎭 Animations | Smooth transitions with Framer Motion |
+| 📊 Analytics | Built-in performance monitoring |
+| 🔒 Security Headers | Enhanced security configurations |
+| 🤖 SEO Optimized | Search engine friendly structure |
 
 </div>
 
-### [**Live Docs**](https://livedocs11.vercel.app/)
-Real-time collaborative document editor built with **Next.js**, **TypeScript**, and **Tailwind CSS**.
+## 🚀 Tech Stack
 
 <div align="center">
 
-[![Live View](https://img.shields.io/badge/Live%20View-000?style=for-the-badge&logo=vercel)](https://livedocs11.vercel.app/)
-[![GitHub Repository](https://img.shields.io/badge/GitHub-000?style=for-the-badge&logo=github)](https://github.com/niladri-1/LiveDocs)
+| Frontend | Backend | Database | Tools |
+|----------|---------|----------|-------|
+| Next.js | Node.js | MongoDB | VS Code |
+| React | Express | MySQL | Git |
+| TypeScript | REST API | NoSQL | Vercel |
+| Tailwind CSS | WebSocket | Redis | Docker |
 
 </div>
 
----
+## 🛠️ Quick Start
 
-### [**Figma Clone**](https://tigma1.vercel.app/)
-A real-time collaborative design tool inspired by Figma.
+```bash
+# Clone the repository
+git clone https://github.com/niladri-1/portfolio.git
+
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
+
+# Build for production
+npm run build
+```
+
+## 📱 Mobile Features
+
+- 📱 Responsive navigation
+- 🔍 Mobile-optimized search
+- 👆 Touch-friendly interactions
+- 🖼️ Optimized images
+- 📊 Mobile performance metrics
+
+## 🎯 Core Sections
 
 <div align="center">
 
-[![Live View](https://img.shields.io/badge/Live%20View-000?style=for-the-badge&logo=vercel)](https://tigma1.vercel.app/)
-[![GitHub Repository](https://img.shields.io/badge/GitHub-000?style=for-the-badge&logo=github)](https://github.com/niladri-1/Figma-Clone)
+| Section | Description |
+|---------|------------|
+| 🏠 Home | Welcome and introduction |
+| 👨‍💻 About | Professional background |
+| 📂 Projects | Development portfolio |
+| 💼 Experience | Work history |
+| 🎓 Education | Academic background |
+| 🏆 Certificates | Professional certifications |
+| 📞 Contact | Get in touch |
 
 </div>
 
----
-
-### [**Video Conferencing App**](https://yoom01.vercel.app/)
-Enables video meetings with chat, screen sharing, and recording.
+## 🔍 SEO Keywords
 
 <div align="center">
 
-[![Live View](https://img.shields.io/badge/Live%20View-000?style=for-the-badge&logo=vercel)](https://yoom01.vercel.app/)
-[![GitHub Repository](https://img.shields.io/badge/GitHub-000?style=for-the-badge&logo=github)](https://github.com/niladri-1/Video-Conferencing-App)
+`Niladri Chatterjee` · `Niladri1` · `Software Developer` · `Full Stack Developer` · `MERN Stack` · `Web Developer` · `React Developer` · `Next.js Expert` · `Database Developer` · `Frontend Specialist` · `Backend Developer` · `JavaScript Expert` · `TypeScript Developer` · `Node.js Developer` · `MongoDB Expert` · `SQL Developer`
 
 </div>
 
----
+## 📞 Let's Connect
 
 <div align="center">
 
-## 📫 **Let's Connect** 📫
-
-[![Email](https://img.shields.io/badge/Email-000?style=for-the-badge&logo=gmail)](mailto:code.niladri@gmail.com)
-[![GitHub](https://img.shields.io/badge/GitHub-000?style=for-the-badge&logo=github)](https://github.com/niladri-1)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-000?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/niladri1)
+[![Email](https://img.shields.io/badge/Email-code.niladri%40gmail.com-red?style=for-the-badge&logo=gmail)](mailto:code.niladri@gmail.com)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-niladri1-blue?style=for-the-badge&logo=linkedin)](https://linkedin.com/in/niladri1)
+[![GitHub](https://img.shields.io/badge/GitHub-niladri--1-black?style=for-the-badge&logo=github)](https://github.com/niladri-1)
+[![WhatsApp](https://img.shields.io/badge/WhatsApp-Connect-green?style=for-the-badge&logo=whatsapp)](https://wa.me/+916296554939)
 
 </div>
 
----
+## 📈 GitHub Stats
 
 <div align="center">
 
-## 📝 **License** 📝
+[![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=niladri-1&theme=dark)](https://github.com/niladri-1)
 
 </div>
 
-This portfolio is designed and developed by **Niladri Chatterjee**. Feel free to explore, but please give credit where it's due.
-
----
+## 📄 License
 
 <div align="center">
 
-Thank you for visiting my portfolio! Don't forget to check out my projects and get in touch if you'd like to collaborate! 🎉
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+[![MIT License](https://img.shields.io/badge/License-MIT-green.svg?style=for-the-badge)](LICENSE)
+[![Visitors](https://api.visitorbadge.io/api/visitors?path=niladri-1%2Fportfolio&label=Visitors&labelColor=%23000000&countColor=%2337d67a)](https://visitorbadge.io/status?path=niladri-1%2Fportfolio)
+
+<h3>⭐ Star this repo if you like it!</h3>
 
 </div>
