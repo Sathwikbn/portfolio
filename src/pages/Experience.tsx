@@ -117,13 +117,13 @@ const Experience = () => {
 								</div>
 
 								<div className="relative hidden md:block">
-									<div className="absolute inset-0">
+									<div className="absolute inset-0 group-hover:scale-105 transition-transform duration-500">
 										<img
 											src={exp.image}
 											alt={exp.company}
-											className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+											className="w-full h-full object-cover"
 										/>
-										<div className="absolute inset-0 bg-gradient-to-r from-gray-800/80 to-transparent" />
+										<div className="absolute inset-0 bg-gradient-to-r from-gray-800/80 to-transparent group-hover:scale-105 transition-transform duration-500" />
 									</div>
 									<div className="relative h-full flex items-center justify-center">
 										<motion.a
