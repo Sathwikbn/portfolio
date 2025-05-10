@@ -11,8 +11,8 @@ const experiences = [
 		location: "Remote",
 		period: "Jun 2024 - Aug2024",
 		type: "Internship",
-		image: "./experience/codeAlpha_page.jpg",
-		certificateUrl: "./files/experience_pdf/codeAlpha.pdf",
+		image: "/experience/codeAlpha_page.jpg",
+		certificateUrl: "/files/experience_pdf/codeAlpha.pdf",
 		description: [
 			"Optimized web application performance with JavaScript and React.js, achieving a 98% error-free rate",
 			"Implemented advanced features on a React.js platform, resulting in a 40% surge in user interaction"
@@ -24,8 +24,8 @@ const experiences = [
 		location: "Remote",
 		period: "Jun 2024 - Jul 2024",
 		type: "Internship",
-		image: "./experience/bharatIntern_page.jpg",
-		certificateUrl: "./files/experience_pdf/bharatIntern.pdf",
+		image: "/experience/bharatIntern_page.jpg",
+		certificateUrl: "/files/experience_pdf/bharatIntern.pdf",
 		description: [
 			"Designed 3 websites with CSS, JavaScript, React.js, Node.js and MongoDB, resulting in a 30% increase in user engagement",
 			"Built a money tracker app using HTML, CSS, React.js, Node.js, and MongoDB, improving user financial tracking by 25%"
@@ -37,8 +37,8 @@ const experiences = [
 		location: "Remote",
 		period: "Jun 2023 - Jul 2023",
 		type: "Internship",
-		image: "./experience/codeClause_page.jpg",
-		certificateUrl: "./files/experience_pdf/codeClause.pdf",
+		image: "/experience/codeClause_page.jpg",
+		certificateUrl: "/files/experience_pdf/codeClause.pdf",
 		description: [
 			"Engineered a real-time collaborative document editor using Next.js, TypeScript, and Liveblocks, reducing latency by 30%",
 			"Implemented and optimized a personal portfolio with Next.js and Tailwind CSS, improving performance by 40%"
@@ -50,8 +50,8 @@ const experiences = [
 		location: "Remote",
 		period: "Jun 2023 - Jul 2023",
 		type: "Internship",
-		image: "./experience/oasisInfobyte_page.jpg",
-		certificateUrl: "./files/experience_pdf/oasisInfobyte.pdf",
+		image: "/experience/oasisInfobyte_page.jpg",
+		certificateUrl: "/files/experience_pdf/oasisInfobyte.pdf",
 		description: [
 			"Engineered a real-time collaborative document editor using Next.js, TypeScript, and Liveblocks, reducing latency by 30%",
 			"Implemented and optimized a personal portfolio with Next.js and Tailwind CSS, improving performance by 40%"

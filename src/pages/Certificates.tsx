@@ -9,7 +9,7 @@ const certificates = [
 		title: "Typescript Programming",
 		issuer: "Geekster",
 		date: "22th April 2025",
-		link: "./files/certificates_pdf/Typescript.pdf",
+		link: "/files/certificates_pdf/Typescript.pdf",
 		description: "Covers TypeScript fundamentals, including syntax, types. Includes practical examples and real-world applications.",
 		skills: ["TypeScript", "JavaScript", "Frontend Development", "Backend Development"]
 	},
@@ -17,7 +17,7 @@ const certificates = [
 		title: "AWS ECS Deployment and Management",
 		issuer: "KodeKloud",
 		date: "20th March 2025",
-		link: "./files/certificates_pdf/aws_ecs.pdf",
+		link: "/files/certificates_pdf/aws_ecs.pdf",
 		description: "Covers deploying and managing containers on AWS using ECS, including cluster management, load balancing, auto-scaling, and CI/CD integration.",
 		skills: ["AWS ECS", "Cloud Computing", "DevOps", "CI/CD"]
 	},
@@ -25,7 +25,7 @@ const certificates = [
 		title: "Critical Infrastructure Protection",
 		issuer: "OPSWAT Academy",
 		date: "26th February 2025",
-		link: "./files/certificates_pdf/critical_infrastructure_protection.pdf",
+		link: "/files/certificates_pdf/critical_infrastructure_protection.pdf",
 		description: "Covers cybersecurity principles, infrastructure security, and risk mitigation strategies.",
 		skills: ["Cybersecurity", "Risk Management", "Industrial Security"]
 	},
@@ -33,7 +33,7 @@ const certificates = [
 		title: "JavaScript Programming",
 		issuer: "HackerRank",
 		date: "18th February 2025",
-		link: "./files/certificates_pdf/javascript.pdf",
+		link: "/files/certificates_pdf/javascript.pdf",
 		description: "Validates JavaScript fundamentals, including syntax, functions, and problem-solving.",
 		skills: ["JavaScript", "ES6", "Asynchronous Programming"]
 	},
@@ -41,7 +41,7 @@ const certificates = [
 		title: "Docker Fundamentals",
 		issuer: "KodeKloud",
 		date: "18th Fabruary 2025",
-		link: "./files/certificates_pdf/docker_fundamentals.pdf",
+		link: "/files/certificates_pdf/docker_fundamentals.pdf",
 		description: "Teaches containerization, networking, security, and CI/CD with Docker.",
 		skills: ["Docker", "Containerization", "CI/CD"]
 	},
@@ -49,7 +49,7 @@ const certificates = [
 		title: "Python Programming",
 		issuer: "HackeRank",
 		date: "10 Oct 2023",
-		link: "./files/certificates_pdf/python.pdf",
+		link: "/files/certificates_pdf/python.pdf",
 		description: "Validates Python basics, including loops, functions, and data structures.",
 		skills: ["Python", "Functions", "Data Structures"]
 	},
@@ -57,7 +57,7 @@ const certificates = [
 		title: "Cybersecurity Virtual Program",
 		issuer: "Forage",
 		date: "10 Jul 2023",
-		link: "./files/certificates_pdf/cybersecurity_virtual_program.pdf",
+		link: "/files/certificates_pdf/cybersecurity_virtual_program.pdf",
 		description: "Focuses on cybersecurity threats, vulnerabilities, and risk mitigation.",
 		skills: ["Cybersecurity", "Threat Mitigation", "Ransomware"]
 	}
