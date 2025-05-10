@@ -44,7 +44,7 @@ const About = () => {
 				<ScrollAnimation>
 					<div className="aspect-square overflow-hidden rounded-2xl">
 						<img
-							src="./profile/profile.jpg"
+							src="/profile/profile.jpg"
 							alt="Niladri Chatterjee"
 							className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
 						/>
@@ -84,7 +84,7 @@ const About = () => {
 					<ScrollAnimation>
 						<div className="flex justify-start space-x-4">
 							<a
-								href="./files/cv_pdf/Niladri_Chatterjee(CV).pdf"
+								href="/files/cv_pdf/Niladri_Chatterjee(CV).pdf"
 								target="_blank"
 								rel="noopener noreferrer"
 								className="px-6 py-3 bg-white text-black rounded-full font-medium hover:bg-gray-100 transition-colors"

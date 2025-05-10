@@ -2,6 +2,8 @@
 
 import { motion } from 'framer-motion';
 import { GraduationCap, Calendar, MapPin, BookOpen, Award, FileText, ExternalLink } from 'lucide-react';
+import { ScrollAnimation } from '@/components/ScrollAnimation';
+import Image from 'next/image';
 
 const Education = () => {
 	const educationData = [
@@ -11,8 +13,8 @@ const Education = () => {
 			duration: "July 2020 - June 2024",
 			degree: "B.Tech (Computer Science and Engineering)",
 			grade: "CGPA: 8.48 (80%)",
-			image: "./education/college_img.jpg",
-			resultUrl: "./files/education_pdf/B Tech.pdf",
+			image: "/education/college_img.jpg",
+			resultUrl: "/files/education_pdf/B Tech.pdf",
 			coursework: [
 				"DSA",
 				"OOPs",
@@ -30,8 +32,8 @@ const Education = () => {
 			duration: "June 2018 - July 2019",
 			degree: "Higher Secondary (WBSC)",
 			grade: "Percentage: 79%",
-			image: "./education/school_img.jpg",
-			resultUrl: "./files/education_pdf/HS MARK SHEET.pdf",
+			image: "/education/school_img.jpg",
+			resultUrl: "/files/education_pdf/HS MARK SHEET.pdf",
 			subjects: [
 				"Physics",
 				"Chemistry",
@@ -45,11 +47,7 @@ const Education = () => {
 
 	return (
 		<div className="min-h-screen pt-20 px-4 max-w-6xl mx-auto pb-20">
-			<motion.div
-				initial={{ opacity: 0, y: 20 }}
-				animate={{ opacity: 1, y: 0 }}
-				transition={{ duration: 0.8 }}
-			>
+			<ScrollAnimation>
 				<motion.div
 					className="flex items-center gap-3 mb-12"
 					initial={{ opacity: 0, x: -20 }}
@@ -59,11 +57,12 @@ const Education = () => {
 					<GraduationCap className="w-8 h-8" />
 					<h2 className="text-4xl font-bold gradient-text">Education</h2>
 				</motion.div>
+			</ScrollAnimation>
 
-				<div className="space-y-12">
-					{educationData.map((edu, index) => (
+			<div className="space-y-12">
+				{educationData.map((edu, index) => (
+					<ScrollAnimation key={edu.school}>
 						<motion.div
-							key={edu.school}
 							initial={{ opacity: 0, y: 20 }}
 							animate={{ opacity: 1, y: 0 }}
 							transition={{ duration: 0.8, delay: index * 0.2 }}
@@ -77,10 +76,14 @@ const Education = () => {
 							<div className="grid md:grid-cols-[300px,1fr] gap-6">
 								{/* Left Column - Image */}
 								<div className="relative h-64 md:h-full">
-									<img
+									<Image
 										src={edu.image}
 										alt={edu.school}
-										className="w-full h-full object-cover"
+										fill
+										className="object-cover"
+										sizes="(max-width: 768px) 100vw, 300px"
+										priority
+										quality={90}
 									/>
 									<div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex items-end">
 										<div className="p-6">
@@ -152,9 +155,9 @@ const Education = () => {
 								</div>
 							</div>
 						</motion.div>
-					))}
-				</div>
-			</motion.div>
+					</ScrollAnimation>
+				))}
+			</div>
 		</div>
 	);
 };
