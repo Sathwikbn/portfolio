@@ -50,27 +50,23 @@ const Kali = () => {
 				<div className="relative max-w-4xl mx-auto px-4">
 					<ScrollAnimation>
 						<div className="text-center mb-12">
+
+							<h1 className="text-4xl md:text-6xl font-bold mt-6 mb-6 gradient-text">Kali Linux for VirtualBox</h1>
+
 							{/* Logo Section */}
-							<div className="flex items-center justify-center gap-8 mb-8">
+							<div className="flex items-center justify-center gap-0 mb-8">
 								<img
 									src="/profile/kali_logo.png"
 									alt="Kali Linux Logo"
-									className="w-24 h-24"
+									className="w-48 h-48 opacity-70"
 								/>
 								<Link className="w-8 h-8 text-white/60" />
 								<img
 									src="/profile/Virtualbox_logo.png"
 									alt="VirtualBox Logo"
-									className="w-24 h-24 object-contain invert opacity-60"
+									className="w-48 h-48 object-contain opacity-65"
 								/>
 							</div>
-
-							<h1 className="text-4xl md:text-6xl font-bold mb-6 gradient-text">
-								Kali Linux for VirtualBox
-							</h1>
-							<p className="text-xl text-gray-400 mb-8">
-								Pre-configured Kali Linux OVA with essential security tools
-							</p>
 
 							<motion.a
 								href="https://mega.nz/file/Uid1DI6T#GXSPao6M3evGdKYVM-koj9zUdC31KnteKDW--5ZjG50"
@@ -84,6 +80,8 @@ const Kali = () => {
 								Download OVA File
 								<span className="text-sm opacity-80">(11GB)</span>
 							</motion.a>
+
+							<p className="text-xl text-gray-400 mt-6 mb-8">Pre-configured Kali Linux OVA with essential security tools</p>
 						</div>
 					</ScrollAnimation>
 
