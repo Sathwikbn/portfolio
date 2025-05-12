@@ -58,13 +58,13 @@ const Kali = () => {
 								<img
 									src="/profile/kali_logo.png"
 									alt="Kali Linux Logo"
-									className="w-48 h-48 opacity-70"
+									className="w-24 h-24 opacity-70"
 								/>
 								<Link className="w-8 h-8 text-white/60" />
 								<img
 									src="/profile/Virtualbox_logo.png"
 									alt="VirtualBox Logo"
-									className="w-48 h-48 object-contain opacity-65"
+									className="w-24 h-24 object-contain opacity-65"
 								/>
 							</div>
 
