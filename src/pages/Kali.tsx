@@ -60,7 +60,7 @@ const Kali = () => {
 									alt="Kali Linux Logo"
 									className="w-24 h-24 opacity-70"
 								/>
-								<Link className="w-8 h-8 text-white/60" />
+								<Link className="w-4 h-4 text-white/60" />
 								<img
 									src="/profile/Virtualbox_logo.png"
 									alt="VirtualBox Logo"
