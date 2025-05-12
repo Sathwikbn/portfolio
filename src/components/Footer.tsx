@@ -16,6 +16,7 @@ const Footer = () => {
 		{ name: 'Projects', path: '/projects' },
 		{ name: 'Certificates', path: '/certificates' },
 		{ name: 'Contact', path: '/contact' },
+		{ name: 'Kali-Linux Download', path: '/kali' },
 	];
 
 	// Split links into columns of 3
@@ -143,7 +144,7 @@ const Footer = () => {
 						</p>
 						<div className="flex space-x-6 mt-4 md:mt-0">
 							<a href="" rel="noopener noreferrer" className="text-sm text-gray-400 hover:text-white transition-colors">
-								Portfolio
+								Niladri's Portfolio
 							</a>
 						</div>
 					</div>
