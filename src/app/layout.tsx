@@ -5,6 +5,8 @@ import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import { Analytics } from '@vercel/analytics/react';
 import './globals.css';
+import { SpeedInsights } from '@vercel/speed-insights/next';
+
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -44,7 +46,7 @@ export const metadata: Metadata = {
 		canonical: '/',
 	},
 	verification: {
-		google: 'your-google-verification-code',
+		google: '/googlea4a36904e14398c1.html',
 	},
 };
 
@@ -66,6 +68,7 @@ export default function RootLayout({
 					<Background3D />
 					<Navbar />
 					<main className="flex-grow">{children}</main>
+					<SpeedInsights />
 					<Footer />
 				</div>
 				<Analytics />
