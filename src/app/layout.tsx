@@ -7,9 +7,11 @@ import './globals.css';
 import { SpeedInsights } from '@vercel/speed-insights/next';
 import { Analytics } from '@vercel/analytics/next';
 
-
-
-const inter = Inter({ subsets: ['latin'] });
+const inter = Inter({
+	subsets: ['latin'],
+	display: 'swap',
+	preload: true,
+});
 
 export const metadata: Metadata = {
 	title: 'Niladri Chatterjee - Software Developer',
@@ -18,6 +20,8 @@ export const metadata: Metadata = {
 	authors: [{ name: 'Niladri Chatterjee' }],
 	creator: 'Niladri Chatterjee',
 	manifest: '/manifest.json',
+	themeColor: '#000000',
+	viewport: 'width=device-width, initial-scale=1, maximum-scale=5',
 	openGraph: {
 		type: 'website',
 		locale: 'en_US',
@@ -57,14 +61,15 @@ export default function RootLayout({
 	children: React.ReactNode;
 }) {
 	return (
-		<html lang="en">
+		<html lang="en" className={inter.className}>
 			<head>
-				<link rel="shortcut icon" href="./nextjs.png" type="image/x-icon" />
-				<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-				<meta httpEquiv="Content-Security-Policy" content="default-src 'self' data: blob: https:; script-src 'self' 'unsafe-inline' 'unsafe-eval' blob: data: https:; style-src 'self' 'unsafe-inline' https:; img-src 'self' data: blob: https: http:; font-src 'self' data: https:; connect-src 'self' data: blob: https:; worker-src 'self' blob: data:;" />
+				<link rel="shortcut icon" href="/nextjs.png" type="image/x-icon" />
+				<link rel="apple-touch-icon" href="/nextjs.png" />
+				<meta name="theme-color" content="#000000" />
 				<link rel="manifest" href="/manifest.json" />
+				<meta httpEquiv="Content-Security-Policy" content="default-src 'self' data: blob: https:; script-src 'self' 'unsafe-inline' 'unsafe-eval' blob: data: https:; style-src 'self' 'unsafe-inline' https:; img-src 'self' data: blob: https: http:; font-src 'self' data: https:; connect-src 'self' data: blob: https:; worker-src 'self' blob: data:;" />
 			</head>
-			<body className={inter.className}>
+			<body>
 				<div className="min-h-screen flex flex-col">
 					<Background3D />
 					<Navbar />

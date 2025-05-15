@@ -7,7 +7,7 @@ import { ScrollAnimation } from '@/components/ScrollAnimation';
 
 export default function OfflinePage() {
 	return (
-		<div className="min-h-screen flex items-center justify-center px-4">
+		<div className="min-h-screen flex items-center justify-center px-4" role="main" aria-label="Offline Page">
 			<div className="text-center max-w-2xl mx-auto relative z-10">
 				<ScrollAnimation>
 					<motion.div
@@ -28,20 +28,24 @@ export default function OfflinePage() {
 								ease: "easeInOut"
 							}}
 						>
-							<WifiOff className="w-32 h-32 text-gray-400" />
+							<WifiOff
+								className="w-32 h-32 text-gray-400"
+								role="img"
+								aria-label="No Internet Connection Icon"
+							/>
 						</motion.div>
 					</motion.div>
 				</ScrollAnimation>
 
 				<ScrollAnimation>
-					<motion.h2
+					<motion.h1
 						className="text-3xl md:text-4xl font-bold mb-4"
 						initial={{ opacity: 0, y: 20 }}
 						animate={{ opacity: 1, y: 0 }}
 						transition={{ delay: 0.3 }}
 					>
 						No Internet Connection
-					</motion.h2>
+					</motion.h1>
 				</ScrollAnimation>
 
 				<ScrollAnimation>
@@ -64,8 +68,10 @@ export default function OfflinePage() {
 						<Link
 							href="/"
 							className="inline-flex items-center gap-2 px-6 py-3 bg-white text-black rounded-full font-medium hover:bg-gray-100 transition-colors group"
+							role="button"
+							aria-label="Try Again"
 						>
-							<Home className="w-5 h-5 group-hover:scale-110 transition-transform" />
+							<Home className="w-5 h-5 group-hover:scale-110 transition-transform" aria-hidden="true" />
 							<span>Try Again</span>
 						</Link>
 					</motion.div>
