@@ -16,7 +16,7 @@ const inter = Inter({
 export const metadata: Metadata = {
 	title: 'Niladri Chatterjee - Software Developer',
 	description: 'Niladri Chatterjee - Full Stack Developer specializing in MERN stack, React.js, Node.js, and modern web technologies. Expert in database development and web applications.',
-	keywords: 'Niladri Chatterjee, Niladri1, Software Developer, Full Stack Developer, MERN Stack, Web Developer, React Developer, Next.js Expert, Database Developer, Frontend Specialist, Backend Developer, JavaScript Expert, TypeScript Developer, Node.js Developer, MongoDB Expert, SQL Developer',
+	keywords: 'Niladri Chatterjee, Niladri1, niladri1, Software Developer, Full Stack Developer, MERN Stack, Web Developer, React Developer, Next.js Expert, Database Developer, Frontend Specialist, Backend Developer, JavaScript Expert, TypeScript Developer, Node.js Developer, MongoDB Expert, SQL Developer',
 	authors: [{ name: 'Niladri Chatterjee' }],
 	creator: 'Niladri Chatterjee',
 	manifest: '/manifest.json',
