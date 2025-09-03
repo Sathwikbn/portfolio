@@ -1,0 +1,28 @@
+// Copy this template when you get a new job/internship
+// Paste it at the TOP of the experiences array (index 0)
+
+{
+    company: "COMPANY_NAME_HERE",
+    role: "JOB_TITLE_HERE",
+    duration: "START_DATE - END_DATE_OR_PRESENT",
+    location: "CITY, STATE/COUNTRY",
+    type: "Full-time", // Options: "Full-time", "Part-time", "Contract", "Internship", "Freelance"
+    image: "/experience/company-logo.jpg", // Add company logo to public/experience/ folder
+    description: "Write 2-3 sentences about your main responsibilities and what you do in this role.",
+    achievements: [
+        "Specific achievement with numbers if possible (e.g., 'Built 3 features serving 10,000+ users')",
+        "Another key accomplishment with impact",
+        "Third important achievement or responsibility"
+    ],
+    technologies: ["Technology1", "Technology2", "Technology3", "Technology4"],
+    certificate: null, // or "/files/experience_pdf/certificate.pdf" if you have one
+    website: "https://company-website.com", // Optional: Company website
+    linkedin: "https://linkedin.com/company/company-name" // Optional: Company LinkedIn
+},
+
+// Remember to:
+// 1. Add company logo to public/experience/ folder
+// 2. Add certificate to public/files/experience_pdf/ if applicable
+// 3. Test the page locally with npm run dev
+// 4. Deploy changes to Vercel
+

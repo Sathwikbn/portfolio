@@ -6,14 +6,27 @@ const Background3D = () => {
 	const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
 
 	useEffect(() => {
+		let animationFrame: number;
+		
 		const handleMouseMove = (e: MouseEvent) => {
-			const x = e.clientX - window.innerWidth / 2;
-			const y = e.clientY - window.innerHeight / 2;
-			setMousePosition({ x, y });
+			if (animationFrame) {
+				cancelAnimationFrame(animationFrame);
+			}
+			
+			animationFrame = requestAnimationFrame(() => {
+				const x = (e.clientX - window.innerWidth / 2) * 0.1;
+				const y = (e.clientY - window.innerHeight / 2) * 0.1;
+				setMousePosition({ x, y });
+			});
 		};
 
-		window.addEventListener('mousemove', handleMouseMove);
-		return () => window.removeEventListener('mousemove', handleMouseMove);
+		window.addEventListener('mousemove', handleMouseMove, { passive: true });
+		return () => {
+			window.removeEventListener('mousemove', handleMouseMove);
+			if (animationFrame) {
+				cancelAnimationFrame(animationFrame);
+			}
+		};
 	}, []);
 
 	return (

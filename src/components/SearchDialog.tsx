@@ -9,25 +9,25 @@ const searchData = [
 		title: 'Home',
 		description: 'Go to the welcome page',
 		path: '/',
-		keywords: ['home', 'cv', 'resume', 'start', 'welcome', 'portfolio', 'niladri', 'niladri chatterjee', 'niladri1', 'software developer', 'full stack developer', 'mern stack', 'web developer']
+		keywords: ['home', 'cv', 'resume', 'start', 'welcome', 'portfolio', 'sathwik', 'sathwik b n', 'sathwikbn', 'student', 'software developer', 'web developer', 'technology enthusiast']
 	},
 	{
 		title: 'About',
 		description: 'Learn more about me and my background',
 		path: '/about',
-		keywords: ['about', 'background', 'education', 'bio', 'profile', 'cv', 'resume', 'niladri', 'chatterjee', 'full stack developer', 'software engineer', 'web developer']
+		keywords: ['about', 'background', 'education', 'bio', 'profile', 'cv', 'resume', 'sathwik', 'student', 'software developer', 'web developer', 'technology enthusiast']
 	},
 	{
 		title: 'Education',
 		description: 'View my educational background',
 		path: '/education',
-		keywords: ['education', 'university', 'college', 'degree', 'school', 'board', 'computer science', 'engineering', 'b.tech', 'bengal college']
+		keywords: ['education', 'university', 'college', 'degree', 'school', 'student', 'learning', 'academic', 'bangalore', 'india']
 	},
 	{
 		title: 'Experience',
 		description: 'Check out my professional experience',
 		path: '/experience',
-		keywords: ['experience', 'work', 'career', 'jobs', 'professional', 'internships', 'certificates', 'mern', 'web developer', 'full stack', 'software developer']
+		keywords: ['experience', 'work', 'career', 'jobs', 'professional', 'internships', 'learning', 'student', 'projects', 'web developer', 'software developer']
 	},
 	{
 		title: 'Skills',
@@ -39,7 +39,7 @@ const searchData = [
 		title: 'Projects',
 		description: 'View my portfolio of projects',
 		path: '/projects',
-		keywords: ['projects', 'portfolio', 'work', 'examples', 'github', 'code', 'open-source', 'web applications', 'full stack', 'mern stack', 'react', 'node']
+		keywords: ['projects', 'portfolio', 'work', 'examples', 'github', 'code', 'learning', 'student projects', 'web applications', 'react', 'javascript', 'html', 'css']
 	},
 	{
 		title: 'Certificates',

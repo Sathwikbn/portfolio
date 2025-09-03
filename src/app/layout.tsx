@@ -14,27 +14,27 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-	title: 'Niladri Chatterjee - Software Developer',
-	description: 'Niladri Chatterjee - Full Stack Developer specializing in MERN stack, React.js, Node.js, and modern web technologies. Expert in database development and web applications.',
-	keywords: 'Niladri Chatterjee, Niladri1, niladri1, Software Developer, Full Stack Developer, MERN Stack, Web Developer, React Developer, Next.js Expert, Database Developer, Frontend Specialist, Backend Developer, JavaScript Expert, TypeScript Developer, Node.js Developer, MongoDB Expert, SQL Developer',
-	authors: [{ name: 'Niladri Chatterjee' }],
-	creator: 'Niladri Chatterjee',
+	title: 'Sathwik B N - Student & Aspiring Software Developer',
+	description: 'Sathwik B N - Student and aspiring software developer based in Bangalore, India. Passionate about full-stack development, web technologies, and continuous learning.',
+	keywords: 'Sathwik B N, Sathwikbn, Student, Software Developer, Web Developer, Frontend Developer, Backend Developer, React Developer, Next.js, JavaScript, TypeScript, Node.js, Full Stack Development, Technology Enthusiast, Bangalore, India',
+	authors: [{ name: 'Sathwik B N' }],
+	creator: 'Sathwik B N',
 	manifest: '/manifest.json',
 	themeColor: '#000000',
 	viewport: 'width=device-width, initial-scale=1, maximum-scale=5',
 	openGraph: {
 		type: 'website',
 		locale: 'en_US',
-		url: 'https://niladri1.vercel.app/',
-		title: 'Niladri Chatterjee - Full Stack Developer',
-		description: 'Full-stack developer specializing in MERN stack, React.js, Node.js, and modern web technologies.',
-		siteName: 'Niladri Chatterjee Portfolio',
+		url: 'https://sathwikbn.vercel.app/',
+		title: 'Sathwik B N - Student & Aspiring Software Developer',
+		description: 'Student and aspiring software developer passionate about full-stack development and modern web technologies.',
+		siteName: 'Sathwik B N Portfolio',
 	},
 	twitter: {
 		card: 'summary_large_image',
-		title: 'Niladri Chatterjee - Full Stack Developer',
-		description: 'Full-stack developer specializing in MERN stack, React.js, Node.js, and modern web technologies.',
-		creator: '@niladri_dev',
+		title: 'Sathwik B N - Student & Aspiring Software Developer',
+		description: 'Student and aspiring software developer passionate about full-stack development and modern web technologies.',
+		creator: '@sathwikbn',
 	},
 	robots: {
 		index: true,
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
 			noimageindex: true,
 		},
 	},
-	metadataBase: new URL('https://niladri1.vercel.app'),
+	metadataBase: new URL('https://sathwikbn.vercel.app'),
 	alternates: {
 		canonical: '/',
 	},
@@ -73,7 +73,9 @@ export default function RootLayout({
 				<div className="min-h-screen flex flex-col">
 					<Background3D />
 					<Navbar />
-					<main className="flex-grow">{children}</main>
+					<main className="flex-grow">
+						{children}
+					</main>
 					<SpeedInsights />
 					<Footer />
 				</div>

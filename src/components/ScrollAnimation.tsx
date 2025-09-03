@@ -10,7 +10,7 @@ interface ScrollAnimationProps {
 
 export const ScrollAnimation = ({ children, className }: ScrollAnimationProps) => {
 	const ref = useRef(null);
-	const isInView = useInView(ref, { once: true, margin: "-100px" });
+	const isInView = useInView(ref, { once: true, margin: "-50px" });
 	const controls = useAnimation();
 
 	useEffect(() => {
@@ -25,10 +25,10 @@ export const ScrollAnimation = ({ children, className }: ScrollAnimationProps) =
 			initial="hidden"
 			animate={controls}
 			variants={{
-				hidden: { opacity: 0, y: 75 },
+				hidden: { opacity: 0, y: 30 },
 				visible: { opacity: 1, y: 0 }
 			}}
-			transition={{ duration: 0.5, ease: "easeOut" }}
+			transition={{ duration: 0.3, ease: "easeOut" }}
 			className={className}
 		>
 			{children}
