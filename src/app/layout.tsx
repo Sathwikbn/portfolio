@@ -3,6 +3,7 @@ import { Inter } from 'next/font/google';
 import Background3D from '@/components/Background3D';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
+import FloatingNav from '@/components/FloatingNav';
 import './globals.css';
 import { SpeedInsights } from '@vercel/speed-insights/next';
 import { Analytics } from '@vercel/analytics/next';
@@ -76,6 +77,7 @@ export default function RootLayout({
 					<main className="flex-grow">
 						{children}
 					</main>
+					<FloatingNav />
 					<SpeedInsights />
 					<Footer />
 				</div>
